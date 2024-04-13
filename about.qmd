@@ -1,0 +1,52 @@
+---
+title: "Images and hero"
+about:
+  id: hero-heading
+  template: jolla
+  image: whiteboard.jpg
+  image-width: 800px
+  image-shape: rectangle
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+### This content appears above the formatted about page content.
+
+We could say something about CREEM and Univ StA, perhaps a few simple images
+
+
+::: {layout-ncol=2}
+![](https://static.wixstatic.com/media/e1aeed_2b06aa80ebed4efdacef108f1ba9e60e.jpg/v1/fill/w_568,h_345,al_c,q_80,usm_0.66_1.00_0.01/e1aeed_2b06aa80ebed4efdacef108f1ba9e60e.jpg)
+
+![Photos: Steve Buckland](https://static.wixstatic.com/media/e1aeed_8ca62ee34e7941099d44c572de314ce9~mv2.jpg/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01/e1aeed_8ca62ee34e7941099d44c572de314ce9~mv2.jpg)
+:::
+
+
+:::{#hero-heading}
+
+Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.
+
+## Education
+
+University of California, San Diego | San Diego, CA
+PhD in Mathematics | Sept 2011 - June 2015
+
+Macalester College | St. Paul MA
+B.A in Economics | Sept 2007 - June 2011
+
+## Experience
+
+Wengo Analytics | Head Data Scientist | April 2018 - present
+
+GeoScynce | Chief Analyst | Sept 2012 - April 2018
+
+:::
+
+### This content appears below the formatted about page content.
+
+below find other stuff on our website

@@ -1,0 +1,54 @@
+project:
+  type: website
+
+website:
+  navbar:
+    title: false
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: DistWin_images.qmd
+        text: Analysis engines
+    right: 
+      - icon: twitter
+        href: https://twitter.com/distancesamp
+      - icon: github
+        menu:
+          - text: Repositories
+            url: https://github.com/distancedevelopment
+          - text: Report a bug (Distwin)
+            url: https://github.com/DistanceDevelopment/distance-bugs/issues
+          - text: Report a bug (R package)
+            url: https://github.com/DistanceDevelopment/Distance/issues
+      - icon: envelope
+        href: mailto:distance@st-andrews.ac.uk
+      
+  page-footer:
+    background: light
+    left: |
+      **Distance for Windows citation:** <br>
+      Thomas, L., S.T. Buckland, E.A. Rexstad, J.L. Laake, S. Strindberg, <br>
+      S.L. Hedley, J.R.B. Bishop, T.A. Marques, and K.P. Burnham. 2010. <br>
+      Distance software: design and analysis of distance sampling surveys for <br>
+      estimating population size. Journal of Applied Ecology 47: 5-14. <br>
+      DOI: [10.1111/j.1365-2664.2009.01737.x](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2009.01737.x)
+    center: 
+      - text: Software citations
+        href: citations.qmd
+    right: |
+      **Distance R package citation:** <br>
+      Miller, D.L., Rexstad, E., Thomas, L., Marshall, L., <br>
+      and Laake, J.L. (2019). Distance Sampling in R. <br>
+      Journal of Statistical Software, 89(1), 1–28. <br>
+      DOI: [10.18637/jss.v089.i01](https://doi.org/10.18637/jss.v089.i01) <br>
+    
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

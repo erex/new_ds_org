@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Distance sampling org 2024",
+    "section": "",
+    "text": "Photo by Matthew Fainman on Unsplash\n\n\nPhoto by Matthew Fainman on Unsplash"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Images and hero",
+    "section": "",
+    "text": "We could say something about CREEM and Univ StA, perhaps a few simple images\n\n\n\n\n\n\n\n\n\n\n\n\nPhotos: Steve Buckland\n\n\n\n\n\n\n  \n \nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\n\n\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011\n\n\n\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018\n\n \n  \n   \n  \n    \n     twitter\n  \n  \n    \n     Github"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Images and hero",
+    "section": "",
+    "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Images and hero",
+    "section": "",
+    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+  },
+  {
+    "objectID": "DistWin_images.html",
+    "href": "DistWin_images.html",
+    "title": "Screen images of the various engines within Distance for Windows",
+    "section": "",
+    "text": "Examples of various engines performing their tasks within Distance for Windows. Click on any image to enlarge.\n\n\n\n\n\n\n\n\n\nThe multiple covariate distance sampling analysis engine.\n\n\n\n\n\n\n\nThe mark recapture distance sampling analysis engine.\n\n\n\n\n\n\n\n\n\nThe simulation engine.\n\n\n\n\n\n\n\nThe multi-analysis engine.\n\n\n\n\n\n\n\n\n\nThe density surface modelling analysis engine.\n\n\n\n\n\n\n\nThe survey design engine.\n\n\n\n\n\n\n\n\nThe multiple covariate distance sampling analysis engine.\nThe mark recapture distance sampling analysis engine.\nThe simulation engine.\nThe multi-analysis engine.\nThe density surface modelling analysis engine.\nThe survey design engine."
+  },
+  {
+    "objectID": "citations.html",
+    "href": "citations.html",
+    "title": "Citations for distance sampling software",
+    "section": "",
+    "text": "Distance for Windows preferred citation\n\n\n\n\n\n\nThomas, L., S.T. Buckland, E.A. Rexstad, J. L. Laake, S. Strindberg, S. L. Hedley, J. R.B. Bishop, T. A. Marques, and K. P. Burnham. 2010. Distance software: design and analysis of distance sampling surveys for estimating population size. Journal of Applied Ecology 47: 5-14. DOI: 10.1111/j.1365-2664.2009.01737.x\n\n\n\n\n\n\n\n\n\n\n\nDistance R package preferred citation\n\n\n\n\n\n\nMiller, D. L., Rexstad, E., Thomas, L., Marshall, L., & Laake, J. L. (2019). Distance Sampling in R. Journal of Statistical Software, 89(1), 1–28. DOI: 10.18637/jss.v089.i01"
+  }
+]
