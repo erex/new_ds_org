@@ -1,0 +1,54 @@
+---
+title: Distance 7.5 download
+---
+
+# Download Distance 7.5
+
+[Screenshots of Distance 7 can be found here.](DistWin_images.qmd)
+
+Distance 7.5 is now released as the latest version in the Distance 7 release cycle. This version of Distance now runs the 64 bit R allowing users to use R versions 4.2 and up (previous versions of Distance only ran 32 bit R). We have also switched the simulation engine to use the `dsims` R package (DSsim has now been retired from CRAN). Please report any issues you encounter with this switch. The ability to run global simulations with stratified designs is once again available with Distance 7.5 release 2. 
+ 
+Projects will now open in Distance 7.5 by default and you will be asked to "upgrade" your project when opened in Distance 7.5. See the release notes below for more information.
+
+## Download instructions
+
+Please read the "Use Agreement" below before downloading.
+
+**Before installing Distance 7.5, we recommend you read the [latest release notes](downloads/D75Release2Notes.rtf).**
+
+After installing Distance 7.5 you should check the "Additional information" section, below, for any patches that fix last-minute problems.
+
+If you want to make use of the density surface modelling (DSM), mark-recapture distance sampling (MRDS) or multi-analysis (MA) analysis engines or the simulation engine, you need to have the free statistics software R installed on your computer. Note also that only specific versions are supported: for the versions currently supported by Distance, see below.
+
+## Use Agreement
+
+As a user of this software, you are entitled to copy the program and its associated components for your own or your local institutions use (e.g., university, laboratory, department, research center). You are not allowed to distribute this software under the name Distance or any other name, singly or as part of a package, from which you derive any reimbursement.
+
+> Distance contains components and uses technology from many sources: Compaq Computer Corp., ComponentOne Inc., Data Dynamics Inc., Desaware Inc., ESRI, Farpoint Software Inc., IMSL Inc., Microsoft Corp., Polar Software, Sheriden Software Inc. The authors of these components retain copyright over them; however they should not be held responsible for the contents or use of this program, nor should they be contacted with regards to any problems with its use.
+
+We, and our respective agencies, make no warranties, expressed or implied, with respect to this software and its fitness for any particular purpose. In no event will we be liable for indirect or consequential damages, including, without limitation, loss of income or use of information.
+
+Bugs or suggested enhancements should be reported at the [Distance issue tracker](https://github.com/distancedevelopment/distance-bugs). We are keen to hear from you directly regarding any installation issues, please E-mail us at [distance@st-andrews.ac.uk](mailto:distance@st-andrews.ac.uk). This E-mail address can also be used to contact us regarding other feedback.
+
+## Download
+
+Download Distance 7.5 Release 2 <a href="https://standrews.onlinesurveys.ac.uk/distance-75-release-2-download" target="_blank">here</a>
+ 
+
+Once you have downloaded the file, simply run it to launch the setup program, and then follow the instructions displayed on your screen.  A reboot may be required, in which case you may need to restart the setup program again.  On some systems, you may see the following warning message:
+
+![warning message](./images/warning1.jpg)
+
+We are working on a resolution to this problem, but in the meantime, please be assured that Distance is perfectly safe to install, and the following is a work-around to the error message.
+
+- Click on the "More info" link.
+- You should see a button "Run anyway"
+- Click on the "Run anyway" button, and the installation should proceed as normal.
+
+
+### Additional information
+
+* The R libraries supplied with Distance 7.5 release 2 were compiled and tested under R version 4.2.2. We recommend you install this version of R, running Distance with older versions of R will lead to warning messages. Newer versions of R may work, but there is no guarantee of this.
+* If you're having problems with using the MRDS, DSM and MA analysis engines or the simulation engine (errors regarding check that R is installed correctly or the library directory is not writable) then check [details of R installation for Distance 7.5 Release 2](http://distancesampling.org/Distance/old-versions/d75-r-install-details.html).
+
+

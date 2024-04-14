@@ -5,13 +5,21 @@ website:
   navbar:
     title: false
     left:
-      - href: index.qmd
-        text: Home
+      - text: "Home"
+        file: index.qmd
+      - text: "Software"
+        file: software/softwareland.qmd
+      - text: "Training"
+        file: training.qmd
+      - text: "Resources"
+        file: resources/resourcesland.qmd
+      - text: "History"
+        file: history/historyland.qmd
       - about.qmd
-      - href: DistWin_images.qmd
-        text: Analysis engines
+      - text: "Analysis engines"
+        file: DistWin_images.qmd
     right: 
-      - icon: twitter
+      - icon: twitter-x
         href: https://twitter.com/distancesamp
       - icon: github
         menu:
@@ -23,7 +31,28 @@ website:
             url: https://github.com/DistanceDevelopment/Distance/issues
       - icon: envelope
         href: mailto:distance@st-andrews.ac.uk
+        
+  sidebar: 
+    - title: "Software"
+      contents: 
+        - software/downloaddistwin.qmd
+        - software/activity.qmd
+
+    - title: "Resources"
+      contents: 
+        - resources/citations.qmd
+        - resources/whatisds.qmd
+        - resources/books_and_papers.qmd
+        - resources/distancelist.qmd
+        - resources/dbib.hrml
       
+    - title: "History"    
+      contents: 
+        - history/authors.qmd
+        - history/distancesponsors.qmd
+        - history/distancehistory.qmd
+
+
   page-footer:
     background: light
     left: |

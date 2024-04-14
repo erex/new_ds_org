@@ -1,0 +1,33 @@
+---
+title: Books and papers
+---
+
+### Books
+
+The core concepts of distance sampling analysis are described in:
+
+- Buckland, S.T., Anderson, D.R., Burnham, K.P., Laake, J.L., Borchers, D.L. and Thomas, L. 2001. [Introduction to Distance Sampling: Estimating Abundance of Biological Populations](https://www.amazon.co.uk/Introduction-Distance-Sampling-Estimating-Populations/dp/0198509278/ref=sr_1_5?ie=UTF8&qid=1496840490&sr=8-5&keywords=buckland+s.t.#reader_0198509278). Oxford University Press, Oxford, UK.
+
+The previous edition of this book, published in 1993 is available online for free:
+
+- Buckland, S.T., Anderson, D.R., Burnham, K.P. and Laake, J.L. 1993. [Distance Sampling: Estimating Abundance of Biological Populations](downloads/Bucklandetal1993.pdf). Chapman and Hall, London.
+
+Advanced topics in distance sampling analysis are described in:
+
+- Buckland, S.T., Anderson, D.R., Burnham, K.P., Laake, J.L., Borchers, D.L. and Thomas, L. (Editors) 2004. [Advanced Distance Sampling](https://www.amazon.co.uk/Advanced-Distance-Sampling-Estimating-Populations/dp/0199225877/ref=sr_1_1?ie=UTF8&qid=1496840490&sr=8-1&keywords=buckland+s.t.#reader_0199225877). Oxford University Press, Oxford, UK.
+
+A book discussing practical considerations, along with developments in the decade 2004-2014 can be found in the recent book:
+
+- Buckland, S.T., Rexstad, E., Marques, T.A. and Oedekoven, C.S. 2015. [Distance Sampling: Methods and Applications](http://www.springer.com/us/book/9783319192185). Springer, Heidelberg.  [Accompanying website with case studies](https://synergy.st-andrews.ac.uk/ds-manda/).
+
+### Papers
+
+Two introductory articles are available for download here:
+
+- [Marques, T.A., S.T. Buckland, D.L. Borchers, E. Rexstad and L. Thomas](downloads/dist_encyc_statsci.pdf). 2011. Distance sampling. Pp 398-400 in Lovric, M. (Ed.), International Encyclopedia of Statistical Science, Springer-Verlag, Berlin. DOI: [10.1007/978-3-642-04898-2_214](https://doi.org/10.1007/978-3-642-04898-2_214)
+
+Additionally, the Open Access paper:
+
+- [Distance software: design and analysis of distance sampling surveys for estimating population size](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2009.01737.x/pdf)
+
+from Journal of Applied Ecology, which describes the various elements of Distance may be of interest. This paper is the *default citation for Distance for Windows*.
