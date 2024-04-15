@@ -1,0 +1,13 @@
+---
+title: R packages
+---
+
+## R packages
+- [Distance](https://cran.r-project.org/web/packages/Distance/index.html) distance sampling analysis
+  - [Github repository for `Distance` {{<fa brands github>}}](https://github.com/DistanceDevelopment/Distance)
+- [mrds](https://cran.r-project.org/web/packages/mrds/index.html) detection function modelling engine (used by `Distance`)
+  - [Github repository for `mrds` {{<fa brands github>}}](https://github.com/DistanceDevelopment/mrds)
+- [dssd](https://cran.r-project.org/web/packages/dssd/index.html) survey design engine
+  - [Github repository for `dssd` {{<fa brands github>}}](https://github.com/DistanceDevelopment/dssd)
+- [dsims](https://cran.r-project.org/web/packages/dsims/index.html) simulation of distance sampling surveys
+  - [Github repository for `dsims` {{<fa brands github>}}](https://github.com/DistanceDevelopment/dsims)

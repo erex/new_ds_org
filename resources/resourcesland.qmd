@@ -1,0 +1,11 @@
+---
+title: Resources
+---
+
+# Additional resources
+
+- [Citation for software](citations.qmd)
+- [What is distance sampling?](whatisds.qmd)
+- [Books and papers](books_and_papers.qmd)
+- [Distance sampling bibliography](dbib.html)
+- [Email list](distancelist.qmd)

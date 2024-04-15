@@ -2,22 +2,19 @@ project:
   type: website
 
 website:
+  favicon: images/logo.gif
   navbar:
+    background: primary
     title: false
     left:
       - text: "Home"
         file: index.qmd
-      - text: "Software"
-        file: software/softwareland.qmd
       - text: "Training"
         file: training.qmd
-      - text: "Resources"
-        file: resources/resourcesland.qmd
-      - text: "History"
-        file: history/historyland.qmd
-      - about.qmd
-      - text: "Analysis engines"
-        file: DistWin_images.qmd
+      - sidebar:software
+      - sidebar:resources
+      - sidebar:history
+
     right: 
       - icon: twitter-x
         href: https://twitter.com/distancesamp
@@ -33,20 +30,24 @@ website:
         href: mailto:distance@st-andrews.ac.uk
         
   sidebar: 
-    - title: "Software"
+    - id: software
+      title: "Software"
       contents: 
         - software/downloaddistwin.qmd
         - software/activity.qmd
+        - software/Rpackages.qmd
 
-    - title: "Resources"
+    - id: resources
+      title: "Resources"
       contents: 
         - resources/citations.qmd
         - resources/whatisds.qmd
         - resources/books_and_papers.qmd
         - resources/distancelist.qmd
-        - resources/dbib.hrml
+        - resources/dbib.html
       
-    - title: "History"    
+    - id: history
+      title: "History"    
       contents: 
         - history/authors.qmd
         - history/distancesponsors.qmd
@@ -62,9 +63,8 @@ website:
       Distance software: design and analysis of distance sampling surveys for <br>
       estimating population size. Journal of Applied Ecology 47: 5-14. <br>
       DOI: [10.1111/j.1365-2664.2009.01737.x](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2009.01737.x)
-    center: 
-      - text: Software citations
-        href: citations.qmd
+    center: |
+      **Contact us via email** <br>[distance@st-andrews.ac.uk](mailto:distance@st-andrews.ac.uk)
     right: |
       **Distance R package citation:** <br>
       Miller, D.L., Rexstad, E., Thomas, L., Marshall, L., <br>

@@ -1,0 +1,18 @@
+---
+title: Software acquisition
+---
+
+## Distance for Windows
+- [Download](downloaddistwin.qmd)
+- [Animal activity multiplier for CTDS](activity.qmd)
+
+
+## R packages
+- [Distance](https://cran.r-project.org/web/packages/Distance/index.html)
+  - [Github {{<fa brands github>}}](https://github.com/DistanceDevelopment/Distance)
+- [mrds](https://cran.r-project.org/web/packages/mrds/index.html)
+  - [Github {{<fa brands github>}}](https://github.com/DistanceDevelopment/mrds)
+- [dssd](https://cran.r-project.org/web/packages/dssd/index.html)
+  - [Github {{<fa brands github>}}](https://github.com/DistanceDevelopment/dssd)
+- [dsims](https://cran.r-project.org/web/packages/dsims/index.html)
+  - [Github {{<fa brands github>}}](https://github.com/DistanceDevelopment/dsims)

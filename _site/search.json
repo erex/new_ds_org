@@ -40,5 +40,278 @@
     "title": "Citations for distance sampling software",
     "section": "",
     "text": "Distance for Windows preferred citation\n\n\n\n\n\n\nThomas, L., S.T. Buckland, E.A. Rexstad, J. L. Laake, S. Strindberg, S. L. Hedley, J. R.B. Bishop, T. A. Marques, and K. P. Burnham. 2010. Distance software: design and analysis of distance sampling surveys for estimating population size. Journal of Applied Ecology 47: 5-14. DOI: 10.1111/j.1365-2664.2009.01737.x\n\n\n\n\n\n\n\n\n\n\n\nDistance R package preferred citation\n\n\n\n\n\n\nMiller, D. L., Rexstad, E., Thomas, L., Marshall, L., & Laake, J. L. (2019). Distance Sampling in R. Journal of Statistical Software, 89(1), 1–28. DOI: 10.18637/jss.v089.i01"
+  },
+  {
+    "objectID": "training.html",
+    "href": "training.html",
+    "title": "Training",
+    "section": "",
+    "text": "Training\n\nworkshops\ncase studies"
+  },
+  {
+    "objectID": "software/DistWin_images.html",
+    "href": "software/DistWin_images.html",
+    "title": "Screen images of the various engines within Distance for Windows",
+    "section": "",
+    "text": "Examples of various engines performing their tasks within Distance for Windows. Click on any image to enlarge.\n\n\n\n\n\n\n\n\n\nThe multiple covariate distance sampling analysis engine.\n\n\n\n\n\n\n\nThe mark recapture distance sampling analysis engine.\n\n\n\n\n\n\n\n\n\nThe simulation engine.\n\n\n\n\n\n\n\nThe multi-analysis engine.\n\n\n\n\n\n\n\n\n\nThe density surface modelling analysis engine.\n\n\n\n\n\n\n\nThe survey design engine.\n\n\n\n\n\n\n\n\nThe multiple covariate distance sampling analysis engine.\nThe mark recapture distance sampling analysis engine.\nThe simulation engine.\nThe multi-analysis engine.\nThe density surface modelling analysis engine.\nThe survey design engine."
+  },
+  {
+    "objectID": "resources/books_and_papers.html",
+    "href": "resources/books_and_papers.html",
+    "title": "Books and papers",
+    "section": "",
+    "text": "Books\nThe core concepts of distance sampling analysis are described in:\n\nBuckland, S.T., Anderson, D.R., Burnham, K.P., Laake, J.L., Borchers, D.L. and Thomas, L. 2001. Introduction to Distance Sampling: Estimating Abundance of Biological Populations. Oxford University Press, Oxford, UK.\n\nThe previous edition of this book, published in 1993 is available online for free:\n\nBuckland, S.T., Anderson, D.R., Burnham, K.P. and Laake, J.L. 1993. Distance Sampling: Estimating Abundance of Biological Populations. Chapman and Hall, London.\n\nAdvanced topics in distance sampling analysis are described in:\n\nBuckland, S.T., Anderson, D.R., Burnham, K.P., Laake, J.L., Borchers, D.L. and Thomas, L. (Editors) 2004. Advanced Distance Sampling. Oxford University Press, Oxford, UK.\n\nA book discussing practical considerations, along with developments in the decade 2004-2014 can be found in the recent book:\n\nBuckland, S.T., Rexstad, E., Marques, T.A. and Oedekoven, C.S. 2015. Distance Sampling: Methods and Applications. Springer, Heidelberg. Accompanying website with case studies.\n\n\n\nPapers\nAn introductory article is available here:\n\nMarques, T.A., S.T. Buckland, D.L. Borchers, E. Rexstad and L. Thomas. 2011. Distance sampling. Pp 398-400 in Lovric, M. (Ed.), International Encyclopedia of Statistical Science, Springer-Verlag, Berlin. DOI: 10.1007/978-3-642-04898-2_214\n\nAdditionally, the Open Access paper:\n\nThomas, L., S.T. Buckland, E.A. Rexstad, J. L. Laake, S. Strindberg, S. L. Hedley, J. R.B. Bishop, T. A. Marques, and K. P. Burnham. 2010. Distance software: design and analysis of distance sampling surveys for estimating population size. Journal of Applied Ecology 47: 5-14. DOI: 10.1111/j.1365-2664.2009.01737.x\n\nis the default citation for Distance for Windows.",
+    "crumbs": [
+      "Books and papers"
+    ]
+  },
+  {
+    "objectID": "history/historyland.html",
+    "href": "history/historyland.html",
+    "title": "History landing",
+    "section": "",
+    "text": "Authors\nSponsors\nHistory"
+  },
+  {
+    "objectID": "software/softwareland.html",
+    "href": "software/softwareland.html",
+    "title": "Software acquisition",
+    "section": "",
+    "text": "Download\nAnimal activity multiplier for CTDS"
+  },
+  {
+    "objectID": "software/softwareland.html#distance-for-windows",
+    "href": "software/softwareland.html#distance-for-windows",
+    "title": "Software acquisition",
+    "section": "",
+    "text": "Download\nAnimal activity multiplier for CTDS"
+  },
+  {
+    "objectID": "software/softwareland.html#r-packages",
+    "href": "software/softwareland.html#r-packages",
+    "title": "Software acquisition",
+    "section": "R packages",
+    "text": "R packages\n\nDistance\n\nGithub \n\nmrds\n\nGithub \n\ndssd\n\nGithub \n\ndsims\n\nGithub"
+  },
+  {
+    "objectID": "resources/resourcesland.html",
+    "href": "resources/resourcesland.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Additional resources\n\nCitation for software\nWhat is distance sampling?\nBooks and papers\nDistance sampling bibliography\nEmail list"
+  },
+  {
+    "objectID": "software/activity.html",
+    "href": "software/activity.html",
+    "title": "Activity for CTDS",
+    "section": "",
+    "text": "Camera trap distance sampling (CTDS) is a relatively new application of distance sampling, using data from remotely-operated camera or video recorders. The methods are described by Howe et al. (2017). One important component of the analysis of camera trap distance sampling (CTDS) data is determining the proportion of animals that are active during the diurnal sampling window during which detections are counted. A tool to help with this is the activity package (Rowcliffe et al. 2014, Rowcliffe 2021) in the R software.\nWe have created a simple interface that allows web-based access to the core functionality of the activity package without the need to install R. Users can upload detection times from a text file, fit a probability density to the times, input the proportion of the day represented, and obtain activity values together with bootstrap estimates of uncertainty. Users can download the bootstrap results file. The activity value and bootstrap results file can then be imported into Distance for Windows for use in analysis of CTDS data.\nThe visual interface is built using the shiny package in R. It is made available here as a free service to distance sampling users. Please let us know if you have problems accessing it, or have suggestions for improvement.\nClick here to access the web-based interface to the activity package.\n\n\n\nHowe, E.J., S.T. Buckland, M.-L. Despres-Einspenner and H.S. Kuhl. 2017. Distance sampling with camera traps. Methods in Ecology and Evolution 8: 1558-1565. https://doi.org/10.1111/2041-210X.12790\nRowcliffe, M., R. Kays, B. Kranstauber, C.Carbone and P.A. Jansen. 2014. Quantifying levels of animal activity using camera trap data. Methods in Ecology and Evolution 5: 1170-1179. https://doi.org/10.1111/2041-210X.12278\nRowcliffe, M. 2021. activity: Animal Activity statistics. https://CRAN.R-project.org/package=activity",
+    "crumbs": [
+      "Activity for CTDS"
+    ]
+  },
+  {
+    "objectID": "software/activity.html#references",
+    "href": "software/activity.html#references",
+    "title": "Activity for CTDS",
+    "section": "",
+    "text": "Howe, E.J., S.T. Buckland, M.-L. Despres-Einspenner and H.S. Kuhl. 2017. Distance sampling with camera traps. Methods in Ecology and Evolution 8: 1558-1565. https://doi.org/10.1111/2041-210X.12790\nRowcliffe, M., R. Kays, B. Kranstauber, C.Carbone and P.A. Jansen. 2014. Quantifying levels of animal activity using camera trap data. Methods in Ecology and Evolution 5: 1170-1179. https://doi.org/10.1111/2041-210X.12278\nRowcliffe, M. 2021. activity: Animal Activity statistics. https://CRAN.R-project.org/package=activity",
+    "crumbs": [
+      "Activity for CTDS"
+    ]
+  },
+  {
+    "objectID": "software/downloaddistwin.html",
+    "href": "software/downloaddistwin.html",
+    "title": "Distance 7.5 download",
+    "section": "",
+    "text": "Screenshots of Distance 7 can be found here.\nDistance 7.5 is now released as the latest version in the Distance 7 release cycle. This version of Distance now runs the 64 bit R allowing users to use R versions 4.2 and up (previous versions of Distance only ran 32 bit R). We have also switched the simulation engine to use the dsims R package (DSsim has now been retired from CRAN). Please report any issues you encounter with this switch. The ability to run global simulations with stratified designs is once again available with Distance 7.5 release 2.\nProjects will now open in Distance 7.5 by default and you will be asked to “upgrade” your project when opened in Distance 7.5. See the release notes below for more information.\n\n\nPlease read the “Use Agreement” below before downloading.\nBefore installing Distance 7.5, we recommend you read the latest release notes.\nAfter installing Distance 7.5 you should check the “Additional information” section, below, for any patches that fix last-minute problems.\nIf you want to make use of the density surface modelling (DSM), mark-recapture distance sampling (MRDS) or multi-analysis (MA) analysis engines or the simulation engine, you need to have the free statistics software R installed on your computer. Note also that only specific versions are supported: for the versions currently supported by Distance, see below.\n\n\n\nAs a user of this software, you are entitled to copy the program and its associated components for your own or your local institutions use (e.g., university, laboratory, department, research center). You are not allowed to distribute this software under the name Distance or any other name, singly or as part of a package, from which you derive any reimbursement.\n\nDistance contains components and uses technology from many sources: Compaq Computer Corp., ComponentOne Inc., Data Dynamics Inc., Desaware Inc., ESRI, Farpoint Software Inc., IMSL Inc., Microsoft Corp., Polar Software, Sheriden Software Inc. The authors of these components retain copyright over them; however they should not be held responsible for the contents or use of this program, nor should they be contacted with regards to any problems with its use.\n\nWe, and our respective agencies, make no warranties, expressed or implied, with respect to this software and its fitness for any particular purpose. In no event will we be liable for indirect or consequential damages, including, without limitation, loss of income or use of information.\nBugs or suggested enhancements should be reported at the Distance issue tracker. We are keen to hear from you directly regarding any installation issues, please E-mail us at distance@st-andrews.ac.uk. This E-mail address can also be used to contact us regarding other feedback.\n\n\n\nDownload Distance 7.5 Release 2 here\nOnce you have downloaded the file, simply run it to launch the setup program, and then follow the instructions displayed on your screen. A reboot may be required, in which case you may need to restart the setup program again. On some systems, you may see the following warning message:\n\n\n\nwarning message\n\n\nWe are working on a resolution to this problem, but in the meantime, please be assured that Distance is perfectly safe to install, and the following is a work-around to the error message.\n\nClick on the “More info” link.\nYou should see a button “Run anyway”\nClick on the “Run anyway” button, and the installation should proceed as normal.\n\n\n\n\nThe R libraries supplied with Distance 7.5 release 2 were compiled and tested under R version 4.2.2. We recommend you install this version of R, running Distance with older versions of R will lead to warning messages. Newer versions of R may work, but there is no guarantee of this.\nIf you’re having problems with using the MRDS, DSM and MA analysis engines or the simulation engine (errors regarding check that R is installed correctly or the library directory is not writable) then check details of R installation for Distance 7.5 Release 2.",
+    "crumbs": [
+      "Distance 7.5 download"
+    ]
+  },
+  {
+    "objectID": "software/downloaddistwin.html#download-instructions",
+    "href": "software/downloaddistwin.html#download-instructions",
+    "title": "Distance 7.5 download",
+    "section": "",
+    "text": "Please read the “Use Agreement” below before downloading.\nBefore installing Distance 7.5, we recommend you read the latest release notes.\nAfter installing Distance 7.5 you should check the “Additional information” section, below, for any patches that fix last-minute problems.\nIf you want to make use of the density surface modelling (DSM), mark-recapture distance sampling (MRDS) or multi-analysis (MA) analysis engines or the simulation engine, you need to have the free statistics software R installed on your computer. Note also that only specific versions are supported: for the versions currently supported by Distance, see below.",
+    "crumbs": [
+      "Distance 7.5 download"
+    ]
+  },
+  {
+    "objectID": "software/downloaddistwin.html#use-agreement",
+    "href": "software/downloaddistwin.html#use-agreement",
+    "title": "Distance 7.5 download",
+    "section": "",
+    "text": "As a user of this software, you are entitled to copy the program and its associated components for your own or your local institutions use (e.g., university, laboratory, department, research center). You are not allowed to distribute this software under the name Distance or any other name, singly or as part of a package, from which you derive any reimbursement.\n\nDistance contains components and uses technology from many sources: Compaq Computer Corp., ComponentOne Inc., Data Dynamics Inc., Desaware Inc., ESRI, Farpoint Software Inc., IMSL Inc., Microsoft Corp., Polar Software, Sheriden Software Inc. The authors of these components retain copyright over them; however they should not be held responsible for the contents or use of this program, nor should they be contacted with regards to any problems with its use.\n\nWe, and our respective agencies, make no warranties, expressed or implied, with respect to this software and its fitness for any particular purpose. In no event will we be liable for indirect or consequential damages, including, without limitation, loss of income or use of information.\nBugs or suggested enhancements should be reported at the Distance issue tracker. We are keen to hear from you directly regarding any installation issues, please E-mail us at distance@st-andrews.ac.uk. This E-mail address can also be used to contact us regarding other feedback.",
+    "crumbs": [
+      "Distance 7.5 download"
+    ]
+  },
+  {
+    "objectID": "software/downloaddistwin.html#download",
+    "href": "software/downloaddistwin.html#download",
+    "title": "Distance 7.5 download",
+    "section": "",
+    "text": "Download Distance 7.5 Release 2 here\nOnce you have downloaded the file, simply run it to launch the setup program, and then follow the instructions displayed on your screen. A reboot may be required, in which case you may need to restart the setup program again. On some systems, you may see the following warning message:\n\n\n\nwarning message\n\n\nWe are working on a resolution to this problem, but in the meantime, please be assured that Distance is perfectly safe to install, and the following is a work-around to the error message.\n\nClick on the “More info” link.\nYou should see a button “Run anyway”\nClick on the “Run anyway” button, and the installation should proceed as normal.\n\n\n\n\nThe R libraries supplied with Distance 7.5 release 2 were compiled and tested under R version 4.2.2. We recommend you install this version of R, running Distance with older versions of R will lead to warning messages. Newer versions of R may work, but there is no guarantee of this.\nIf you’re having problems with using the MRDS, DSM and MA analysis engines or the simulation engine (errors regarding check that R is installed correctly or the library directory is not writable) then check details of R installation for Distance 7.5 Release 2.",
+    "crumbs": [
+      "Distance 7.5 download"
+    ]
+  },
+  {
+    "objectID": "software/relnote.html",
+    "href": "software/relnote.html",
+    "title": "Distance for Windows release notes",
+    "section": "",
+    "text": "Distance 7.5 Release 2]\nContents"
+  },
+  {
+    "objectID": "software/relnote.html#system-requirements-for-distance-7.5",
+    "href": "software/relnote.html#system-requirements-for-distance-7.5",
+    "title": "Distance for Windows release notes",
+    "section": "System Requirements for Distance 7.5",
+    "text": "System Requirements for Distance 7.5\n\nOperating System and Hardware Requirements\nAny modern desktop PC will have no problem installing and running Distance 7.5. It requires about 90MB of space on your hard drive, and either Windows 7, 8 or 10 operating systems. (Distance will likely also run under older versions of Windows operating systems; however this is no longer actively supported. If you are using a legacy operating system, be aware that the practical minimum hardware requirements are a Pentium II Processor, 48MB RAM, 800x600 SVGA monitor with 256 colors.)\n\n\nR Statistical Software\nThree analysis engines and the simulation engine in Distance 7 are implemented as libraries in the free statistical software R. These are the Mark Recapture Distance Sampling (mrds), Density Surface Modelling (dsm), Multi-Analysis Distance Sampling (mads) and the Distance Sampling Simulations (dsims) libraries. If you would like to run any of these engines, you must install R software on your computer first. You can download R from the R Project web site, http://www.r-project.org/. You need the base precompiled binary distribution for Windows.\n\nThe R libraries in this version of Distance (7.5 release 2) were tested and compiled using R version 4.2.2. You will need to install this version of R and point Distance to it in the R Options after selecting the Preferences option from the Tools menu.\n\nPlease note that R is under very active development, and new versions are released quite frequently. Unfortunately, new versions are sometimes not compatible with libraries compiled in old versions. We will endeavor to test our libraries with each new version as it appears, and update are libraries as required. We will post any information we have about compatibility with new versions on the Distance-sampling email discussion list (see below), so please check there for latest information.\nYou can download and install R after you have installed Distance, and you can run Distance without having R installed - but you will get an error message if you try to run the MRDS, DSM, MA analysis engines or the simulation engine without R.\nFor more information about the R-Distance link, see the Distance online help, Chapter 7. There you will find a topic \"R Statistical Software\".\n\n\nWindows Script 5.6\nIf you are trying to run Distance with a legacy version of Windows (before Windows Vista) you may need to install Windows Script, if it is not already on your machine. The Distance installation program contains a copy of the English language verion of Windows Script 5.6, and you have the option to install this as part of the program setup. If you are using a non-English version of Windows, you will probably want to download and install the version of Windows Script appropriate for your language -- you can get this from http://www.microsoft.com/scripting/. If you have already installed the appropriate version of Windows Script on your computer, then you should say \"No\" when the Distance setup program asks you if you want to install its version.\n\n\nPDF file Reader\nThe Distance User’s Guide is also available in Adobe PDF format. To read this file (which is installed in the Distance/Help directory), you need software capable of reading PDF files. One example is Adobe Acrobat reader, available for free from http://www.adobe.com, but other free software is available.\n\nRunning Distance under other operating systems\nTo run Distance under non-Windows operating systems, a Windows emulator is required. For some tips, see the section on \"Running Distance on other operating systems\" at http://distancesampling.org/distanceextras.html.\n\n\nRunning Distance in extended character systems\nIf you use an extended character operating system (e.g., Chinese, Japanese or Korean language Windows) then you need to make the following change to the program preferences before you start using the program. Once you have installed Distance:\n\nStart Distance\nFrom the menu, choose Tools | Preferences...\nClick on the General tab. Un-tick the box \"Store results in compressed format in project databases\"\nClick OK.\n\nYou need to make this change because by default Distance compresses the results from analyses when it stores them in project databases, and at present it cannot decode these results on extended character operating systems.\nInstalling Distance under Windows\nThe Distance setup program has a filename of the form d[x]release[y].exe, where [x] is derived from the version number and y is the release number. Double-click on this file to run it. You are then guided through the installation. If you have an older operating system, you may be asked to re-boot again early in the installation process and then restart the install. You may also be asked to reboot after install has finished. You need to have administrator privileges to install Distance.\nOnce Distance is installed, you can run Distance 7 from the Programs | Distance 7 folder off the Start menu on your windows Taskbar.\nA list of the files added by Distance installation is given in Appendix 1.\n\n\n\nProblems with Install\nProblems encountered when installing Distance are recorded here: https://github.com/DistanceDevelopment/distance-bugs\nThe main installation issues encountered include conflicts with antivirus software and problems opening dlls. Conflicts with antivirus software can be resolved by temporarily disabling the antivirus software prior to installation. Issues relating to dll conflicts are more complicated, please contact us at distance@st-andrews.ac.uk and we will be happy to try to help you resolve the problem. We now build an alternative installer to try to get round these issues.\nAnother common issue is a warning produced by Windows Defender:\nWindows protected your PC Microsoft Defender SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk.\nMore info\nWe are working on a resolution to this problem, but in the meantime please be assured that Distance is perfectly safe to install, and the following is a work-around to the error message.\n\nClick on the More info link.\nYou should see a button Run anyway.\nClick on the Run anyway button and the installation should proceed as normal.\n\nIf you are having a problem that is not listed there, please (1) check your computer meets the minimum requirements (above); (2) check the archives of the distance-sampling discussion list (see below); (3) look at the file C:\\Program Files (x86)\\Distance 7\\Install.log to see if it gives you any clues as to the problem; (4) contact the program authors by email: distance@st-andrews.ac.uk.\nSample Projects\nInformation on the sample projects is given in Chapter 2 of the online help.\nUpgrading from previous versions of Distance\nDistance 7.5 will install over any previous Distance 7.x installations, it is not necessary to remove these installations prior to installing Distance 7.5. Distance 7.5 will register itself to open .dst files when you double-click on them. If you open a Distance project created in a previous version, you will be asked if you wish to upgrade it, and if you say \"Yes\", Distance will perform the upgrade automatically.\nWhen upgrading Distance you should also upgrade to the recommended version of R. Failing to do so may mean that you continue using old versions of the R packages or the newer R packages may not work in the older version of R. Note that, to ensure that Distance installs the new R packages on the first run of an analysis that uses one of the R-based analysis engines, please take the following steps:\n\nChoose Tools | Preferences | R Options\nTick the box that says Re-install analysis / simulation engine libraries to original versions on the next run.\n\nNote also that to successfully upgrade the R packages when you run an analysis, all other instances of R need to be closed.\nYou are advised to re-run all analyses as the analysis engines are improved with each iteration of the software.\nIf you have a copy of Distance 6, 5, 4 or 3.5 on your machine, you don't have to uninstall it before installing Distance 7. Distance 7 will install into a different directory, and you can carry on using both the older and new version of the software if you wish. However, please note that if you upgrade a Distance project using Distance 7, you will not be able to open it in any of the previous versions. Should you wish to do this, you should copy the project before upgrading, so you can open the old files in the old version. One convenient way to copy a project from within Distance is to use File | Export project.\nPlease let us know if you have any problems transitioning to the new version of Distance.\nUninstalling Distance\nTo uninstall Distance, click on the Add/Remove Programs icon in the Windows Control Panel. Choose Distance 7 from the list and click the Add/Remove button. During the removal process, you will be asked whether you want to remove shared components. Press \"Yes to All\". The install program may not be able to remove all of the folders under C:\\Program Files\\Distance7\\ if you have changed any files in them (e.g., by creating new projects in \\Sample projects). In this case you will have to remove these folders manually after the installation has finished.\nDistance-sampling email discussion list\nThe purpose of this list is to promote the sharing of ideas and information among researchers and practitioners interested in distance sampling techniques. It is a relatively low-volume list, and has been running since 1998, first as a JISCmail list, but more recently as a Google Group.\nSuitable topics for posting include: questions about survey design and analysis, new methodological developments, use of software tools (program Distance and other software), news about upcoming meetings, workshops and conferences where distance methods will be discussed, jobs in distance sampling-related fields.\nYou can browse the list without joining, by navigating to groups.google.com and searching for the group distance-sampling If you have a Google account, you can join via that; alternatively, you can send a blank email to distance-sampling+subscribe@googlegroups. In response, you will receive a message with a link button to \"Join this group\", please follow the instructions. Once you have completed the steps you will receive a second E-mail asking you again to confirm via clicking on the \"Join this group\" button. You should then be informed that you have been successfully subscribed. See http://distancesampling.org/distancelist.html for further information.\nPosts from the old JISCmail mailing list are archived on the Google Group. Please check the archive of previous messages before posting!\nCurrent restrictions for Distance 7.5 Release 2\nMCDS Analysis Engine\nMaximum number of covariates and factor levels is listed in the manual, under “Limitations”\nWhen covariates are specified, only half-normal and hazard-rate key functions allowed\nCannot force the fitted function to be monotonic decreasing\nWhen cluster size is a covariate, stratified analyses are not allowed\nCannot have non-factor covariate value -9999.\nMRDS Analysis Engine\nIgnores units conversion specified in the Units tab of the Data Filter\nMA Analysis Engine\nLine transect surveys only\nSingle observer\nIgnores units conversion specified in the Units tab of the Data Filter\nSimulation Engine\nLine and point transect surveys excluding adjusted angle and equal angle zig zag designs\nSingle observer\nOnly takes the truncation distance from Data Filter (binned data can be generated in dsims R package)\nMinus sampling only\nAll units must be the same for region, design and detection function\nStrata must have unique names/labels\nDoesn't support data-linked study region\nNew features, resolved issues and known problems\nBelow is a summary of new features and resolved issues in each recent version of Distance. For an up to date list, and a list of known problems, please visit https://github.com/DistanceDevelopment/distance-bugs\nDistance 7.5 Release 2 - Uses latest version of R (4.2.2) with updated versions of dssd, dsims, Distance and mrds which have various bug fixes. Fix in dsims now allows for stratum level designs within simulations at the global level.\nDistance 7.5 Release 1 - Uses latest version of R (4.2.1) with updated versions of mrds, dsm and mads which have various bug fixes. In addition, the R package DSsim has been replaced with dsims. Includes an additional example project on the analysis of point transect removal method data. Fixed bug relating to renaming a new map before you have opened it.\nDistance 7.4 Release 2 - Uses R version of 4.1.2. This release has an important bug fix to correct the field names stored in the survey definition for cluster size, object, observer and detected. Anyone using these fields with projects created in Distance 7.4 release 1 should check they are correctly specified within the survey definition.\nDistance 7.4 Release 1 - Uses latest version of R (4.1.2) with updated versions of mrds, dsm, DSsim and mads which have various bug fixes.\nDistance 7.3 Release 2 - Uses latest version of R (4.0.1) with updated versions of mrds, dsm, DSsim and mads which have various bug fixes.\nDistance 7.3 Release 1 - Addition of a shape import wizard. Bug fixes in simulation engine. Uses latest version of R (3.5.1) with updated versions of dsm and DSsim.\nDistance 7.2 Release 1 - Mrds and dsm analyses can now be performed for point transects as well as line transects. Uses latest version of R (3.5.0) with updated versions of mrds, dsm and DSsim.\nDistance 7.1 Release 1 - Uses latest version of R (3.4.1); all R packages updated. New dsm analytical variance calculation, concurvity plot and prediction plot using ggplot2 package. Simulations now support populations that occur in clusters and other individual level covariates.\nDistance 7.0 Release 1 - the public release following the trial of beta 4 during workshops. In addition, we have added an alternative variance calculation option in dsm and point transect designs have been added to the simulation engine. The R packages mrds and dsm have also been upgraded.\nDistance 7.0 Beta 4 - now implements designs (generating multiple surveys) in the simulation engine. Fixes dsm bugs: rqgam.check is only called when appropriate, gam.check has been added to output for all dsm models, alpha value for confidence intervals is now passed to the R library. It relies on the latest version or R 3.3.1 and installs packages built under this version of R.\nDistance 7.0 Beta 3 - relies on the latest version or R 3.2.2 and installs packages built under this version of R. This seems to fix a strange bug with dsm variance calculations when an error message was being generated because object appeared to have missing components.\nDistance 7.0 Beta 2 - provides a major bug fix to the design engine.\nDistance 7.0 Alpha 1 and Distance 7.0 Beta 1 were both using the Distance 6 design properties component. If you have Distance 6 installed you would not have noticed any problems in Distance 7.0. There have been no updates to the design engine and so everything would have been functioning correctly if you succeeded in loading the design inputs page.\nDistance 7.0 Beta 1\nHere’s a brief list of new features, resolved issues and known problems in Distance 7.0 Beta 1, relative to 7.0 Alpha:\nGeneral Interface Known Problems\n- About button does not work for Windows 7\n- Designs and Simulations will not run if region or strata names that they rely on are changed.\nMA Engine\nAn option to specify which field contains species codes has been added\nThe 'cv' bug in covariate uncertainty has been fixed\nCovariate uncertainty on multiple covariates no longer causes an error\nNote that the MA engine requires that the MRDS analysis object exist in the workspace so the option to remove these objects must be switched off\nR packages (mads, mrds, dsm and DSsim) have been updated to latest versions and compiled under R 3.2.2\nSee NEWS file in the relevant packages for further information of changes and/or bug fixes\nHere's a brief list of new features, resolved issues and known problems in Distance 7.0, relative to 6.2:\nWe have made 2 major additions, the multi-analysis (MA) engine and the simulation engine. The MA analysis engine deals with unidentified sightings, covariate uncertainty and model uncertainty. The simulation engine allows you to try out different designs and see how they perform for your particular study.\nReporting problems\nTo report a new problem, please visit https://github.com/DistanceDevelopment/distance-bugs and click the 'New Issue' button or E-mail us at distance@st-andrews.ac.uk.\nAppendix 1: Files added during Distance 7 Installation\nNote - if older versions of these files are already present, they will be overwritten. If newer versions are already present, they will not be changed. (An exception to this is RichEd32.dll, which caused some incompatibility problems in test installations. This file will only be installed if one is not present on the target system.) If you selected the backup option during Setup, backups of all overwritten files will be stored in the BACKUP subdirectory, off the Distance 7 program directory. A log of all files installed is kept in the program directory in the file install.log.\nCommon Files \\ Data Dynamics folder\nActbar2.ocx\nCommon files \\ ESRI\nMo20.ocx AF20.dll Shape20.dll pe81.dll sg81.dll mtch.dll JetTable20.dll\nMicrosoft \\ Shared Tools \\ DAO\nDao2535.tlb Dao250.dll Jettable20.dll Msjet35.dll Msjint35.dll Msjter35.dll Msrd2x35.dll dbajet32.dll\nWindows System 32 folder\nAsycfilt.dll Comcat.dll Comctl32.ocx Comdlg32.ocx Expsrv.dll Mfc42.dll Msvbvm60.dll Msvcirt.dll Msvcp60.dll Msvcrt.dll Msvcrt40.dll mtch.dll Oleaut32.dll Oledlg.dll OlePro32.dll Riched32.dll Scrrun.dll Stdole2.tlb vb5db.dll vbar332.dll vbscript.dll VsFlex7d.ocx ccrpdbs6.dll tab32x30.ocx mschrt20.ocx richtx32.ocx dwAXExtn.dll Dwsdes32.dll D7Zip.dll PolarZip.ocx PolarZipSpan.dll RichEd32.dll Splitter.ocx\nProgram Files (x86) \\ Distance7\nEc.exe DistanceProject.ico Distance.exe D7DbEng.dll CDlg.dll CTmr.dll CSDesc.ocx LLine.ocx LogStr.dll LogWin.ocx SList.ocx PrjParams.dll D7Map.ocx D7Legend.ocx DistIni.mdb ID7NEng.dll D7NEH.exe D7NSvr.dll D7NEIUtil.dll D7CDSNEI.dll D7MRDSNEI.dll D7DSMNEI.dll D7MANEI.dll D7SIMNEI.dll MCDS.exe D7DesNEI.dll D7DesEng.dll D7SvyNEI.dll D7DFPrp.ocx D7MDPrp.ocx D7CDSPrp.ocx D7MRDSPrp.ocx D7MAPrp.ocx D7SIMPrp D7DSMPrp.ocx D7DesPrp.ocx D7SvyPrp.ocx D7DesDet.ocx D7SPWiz.dll DeIDWiz.dll DistanceLogo.jpg ReadMe.rtf support.r dsm.support.r mrds.support.r mads.support.r dssim.support.r\nProgram Files (x86) / Distance / Help\ndistance.chm distance.pdf Sponsors.rtf Authors.rtf DataEntryIntroduction.rtf DataEntryGlobal.rtf DataEntryStratum.rtf DataEntryObservation.rtf DataEntryFinished.rtf TipOfTheDay.txt\nProgram Files (x86) / Distance / Sample Projects\n[a number of sample project files]\nProgram Files (x86) / Distance / RPackages\nCopies of all the packages required by the Distance engines that use R."
+  },
+  {
+    "objectID": "software/Rpackages.html",
+    "href": "software/Rpackages.html",
+    "title": "R packages",
+    "section": "",
+    "text": "Distance distance sampling analysis\n\nGithub repository for Distance \n\nmrds detection function modelling engine (used by Distance)\n\nGithub repository for mrds \n\ndssd survey design engine\n\nGithub repository for dssd \n\ndsims simulation of distance sampling surveys\n\nGithub repository for dsims",
+    "crumbs": [
+      "R packages"
+    ]
+  },
+  {
+    "objectID": "software/Rpackages.html#r-packages",
+    "href": "software/Rpackages.html#r-packages",
+    "title": "R packages",
+    "section": "",
+    "text": "Distance distance sampling analysis\n\nGithub repository for Distance \n\nmrds detection function modelling engine (used by Distance)\n\nGithub repository for mrds \n\ndssd survey design engine\n\nGithub repository for dssd \n\ndsims simulation of distance sampling surveys\n\nGithub repository for dsims",
+    "crumbs": [
+      "R packages"
+    ]
+  },
+  {
+    "objectID": "resources/distancelist.html",
+    "href": "resources/distancelist.html",
+    "title": "E-mail list",
+    "section": "",
+    "text": "This list is for researchers and practitioners interested in the estimation of wildlife abundance using distance sampling techniques (e.g., line transects, point transects (VCPs), cue counts, etc). Discussions include survey design, analysis methods, software tools, problems and new developments.\nThe purpose of the list is to promote the sharing of ideas and information among researchers and practitioners interested in distance sampling techniques. Suitable topics for discussion include:\n\nquestions about survey design and analysis\nnew methodological developments\nuse of software tools (program Distance and other software)\nnews about up-coming meetings, workshops and conferences where distance methods will be discussed\njobs related to distance sampling\n\n\n\nA Google Group you can view and create posts can be accessed at:\ndistance-sampling Google Group\nTo simply join the group and receive messages via e-mail, send an email to\n\ndistance-sampling+subscribe@googlegroups.com\n\nwith blank subject and message. You will receive a confirmation e-mail from Google shortly afterwards.\nIf you have any issues joining the group, get in touch.\n\n\n\nPrevious to June 2014, the list was hosted on the JISC webpages. Old messages have been uploaded onto the Google Group, but you can still access the old list at the list’s home page http://www.jiscmail.ac.uk/lists/distance-sampling.html.",
+    "crumbs": [
+      "E-mail list"
+    ]
+  },
+  {
+    "objectID": "resources/distancelist.html#joining-the-list",
+    "href": "resources/distancelist.html#joining-the-list",
+    "title": "E-mail list",
+    "section": "",
+    "text": "A Google Group you can view and create posts can be accessed at:\ndistance-sampling Google Group\nTo simply join the group and receive messages via e-mail, send an email to\n\ndistance-sampling+subscribe@googlegroups.com\n\nwith blank subject and message. You will receive a confirmation e-mail from Google shortly afterwards.\nIf you have any issues joining the group, get in touch.",
+    "crumbs": [
+      "E-mail list"
+    ]
+  },
+  {
+    "objectID": "resources/distancelist.html#the-old-listserver",
+    "href": "resources/distancelist.html#the-old-listserver",
+    "title": "E-mail list",
+    "section": "",
+    "text": "Previous to June 2014, the list was hosted on the JISC webpages. Old messages have been uploaded onto the Google Group, but you can still access the old list at the list’s home page http://www.jiscmail.ac.uk/lists/distance-sampling.html.",
+    "crumbs": [
+      "E-mail list"
+    ]
+  },
+  {
+    "objectID": "history/authors.html",
+    "href": "history/authors.html",
+    "title": "Authors",
+    "section": "",
+    "text": "Distance has been developed by a team of statisticians, ecologists and computer scientists for institutions around the world. Rather than e-mailing individual team members when asking questions, please consult our Get in Touch page.\n\nLen Thomas is a professor of statistics with the Centre for Research into Ecological and Environmental Modelling (CREEM) at the University of St Andrews. He is the coordinator of the Distance project.\nLaura Marshall is a post-doctoral research fellow within CREEM at the University of St Andrews.\nEric Rexstad is a senior research fellow (now part-time) within CREEM at the University of St Andrews.\nDavid L. Borchers is a professor of statistics in the School of Mathematics and Statistics at the University of St Andrews.\nTiago A. Marques is a senior research fellow within CREEM at the University of St Andrews.\nStephen T. Buckland is a retired statistician, formerly professor of statistics in the School of Mathematics and Statistics at the University of St Andrews.\nJeffrey L. Laake is a retired statistician, formerly with the National Marine Mammal Laboratory in Seattle, USA.\n\n\n\n\n\n\nDistance Development team meeting at the International Statistical Ecology Conference, Summer 2018\n\n\nDistance Development team at the International Statistical Ecology Conference, St Andrews, Summer 2018. Back row, left to right: Steve Buckland, Jeff Laake, Tiago Marques, David Borchers and Dave Miller. Front row, left to right: Eric Rexstad, Len Thomas, Laura Marshall and Rachel Fewster.\n\n\n\nDistance Development team meeting at the International Statistical Ecology Conference, Summer 2014\n\n\nDistance Development team at the International Statistical Ecology Conference, Montpellier, Summer 2014. Left to right: Steve Buckland, Eric Rexstad, David Borchers, Len Thomas, Laura Marshall, Tiago Marques and Dave Miller. Not pictured Jeff Laake. Photographer: Rachel Fewster.\n\n\n\nDistance Development team in a meeting, Summer 2001\n\n\nDistance Development team in a meeting, Summer 2001. Left to right: John Pollard, Ken Burnham, Steve Buckland, Sharon Hedley, David Borchers, Len Thomas, Fernanda Marques, Jeff Laake, Samantha Strindberg.  Team members David Anderson, Eric Rexstad and Jon Bishop are absent; Tiago Marques is behind the camera.",
+    "crumbs": [
+      "Authors"
+    ]
+  },
+  {
+    "objectID": "history/authors.html#team-photo-gallery",
+    "href": "history/authors.html#team-photo-gallery",
+    "title": "Authors",
+    "section": "",
+    "text": "Distance Development team meeting at the International Statistical Ecology Conference, Summer 2018\n\n\nDistance Development team at the International Statistical Ecology Conference, St Andrews, Summer 2018. Back row, left to right: Steve Buckland, Jeff Laake, Tiago Marques, David Borchers and Dave Miller. Front row, left to right: Eric Rexstad, Len Thomas, Laura Marshall and Rachel Fewster.\n\n\n\nDistance Development team meeting at the International Statistical Ecology Conference, Summer 2014\n\n\nDistance Development team at the International Statistical Ecology Conference, Montpellier, Summer 2014. Left to right: Steve Buckland, Eric Rexstad, David Borchers, Len Thomas, Laura Marshall, Tiago Marques and Dave Miller. Not pictured Jeff Laake. Photographer: Rachel Fewster.\n\n\n\nDistance Development team in a meeting, Summer 2001\n\n\nDistance Development team in a meeting, Summer 2001. Left to right: John Pollard, Ken Burnham, Steve Buckland, Sharon Hedley, David Borchers, Len Thomas, Fernanda Marques, Jeff Laake, Samantha Strindberg.  Team members David Anderson, Eric Rexstad and Jon Bishop are absent; Tiago Marques is behind the camera.",
+    "crumbs": [
+      "Authors"
+    ]
+  },
+  {
+    "objectID": "history/distancesponsors.html",
+    "href": "history/distancesponsors.html",
+    "title": "Sponsors",
+    "section": "",
+    "text": "The following organizations have provided support for Distance software. If you are interested in helping to support distance, or funding development of specific features, please contact us.\n\n\n\nWildlife Conservation Society for 3 years was the major sponsor of Distance, providing funding to enable ongoing support and development of the software. \n\n\n\n\nIn addition, specific features in Distance have been or are being developed through contracts or grants from:\n\nLiving Marine Resources program, US Navy, Chief of Naval Operations, Energy and Environmental Readiness Division (N45)\nUS Office of Naval Research, Marine Life Sciences program\nGeoMarine Inc Geo-Marine was acquired by Versar Inc. in 2013.\nUS National Marine Mammal Laboratory\nFisheries and Oceans Canada, Arctic Research Division\nUS National Parks Service, Inventory and Monitoring Division\n[Colorado Cooperative Fish and Wildlife Research Unit](https://www.coopunits.org/Colorado/\nUK Biotechnology and Biological Sciences Research Council\nUK Engineering and Physical Sciences Research Council",
+    "crumbs": [
+      "Sponsors"
+    ]
+  },
+  {
+    "objectID": "history/distancesponsors.html#major-sponsor",
+    "href": "history/distancesponsors.html#major-sponsor",
+    "title": "Sponsors",
+    "section": "",
+    "text": "Wildlife Conservation Society for 3 years was the major sponsor of Distance, providing funding to enable ongoing support and development of the software.",
+    "crumbs": [
+      "Sponsors"
+    ]
+  },
+  {
+    "objectID": "history/distancesponsors.html#features-sponsors",
+    "href": "history/distancesponsors.html#features-sponsors",
+    "title": "Sponsors",
+    "section": "",
+    "text": "In addition, specific features in Distance have been or are being developed through contracts or grants from:\n\nLiving Marine Resources program, US Navy, Chief of Naval Operations, Energy and Environmental Readiness Division (N45)\nUS Office of Naval Research, Marine Life Sciences program\nGeoMarine Inc Geo-Marine was acquired by Versar Inc. in 2013.\nUS National Marine Mammal Laboratory\nFisheries and Oceans Canada, Arctic Research Division\nUS National Parks Service, Inventory and Monitoring Division\n[Colorado Cooperative Fish and Wildlife Research Unit](https://www.coopunits.org/Colorado/\nUK Biotechnology and Biological Sciences Research Council\nUK Engineering and Physical Sciences Research Council",
+    "crumbs": [
+      "Sponsors"
+    ]
+  },
+  {
+    "objectID": "history/distancehistory.html",
+    "href": "history/distancehistory.html",
+    "title": "History",
+    "section": "",
+    "text": "Distance evolved from program TRANSECT. However, Distance is quite different from its predecessor as a result of changes in analysis methods and expanded capabilities. The name Distance was chosen because it can be used to analyze several forms of distance sampling data: line transect, point transect (variable circular plot) and cue-counts. By contrast TRANSECT was designed only to analyze line transect data.\nDistance versions 1.0 - 2.2 were DOS-based applications that were programmed using a relatively simple command language. Version 3.0 was a windows console application, but retained the command language structure. All of these versions were principally programmed by Jeff Laake of the National Marine Mammal Laboratory, US Fisheries Service.\nIn 1997, Steve Buckland and David Borchers, from the University of St Andrews, obtained funding from two British research councils to proceed with an ambitious three-year project to develop new distance sampling software. The new software, which became known as Distance 4, was designed to be fully windows-based, and be capable of incorporating new features such as geographic survey design, multiple covariate distance sampling models, spatial estimation of abundance, and dual observer mark-recapture line transect methods. A Distance 4 project development team was assembled, coordinated by Len Thomas. In autumn 1997, it was decided to produce an intermediate version of Distance: fully windows based, but with the same analysis capabilities as the current version 3.0. This new program, Distance 3.5, took one full year to develop, and was released in November 1998, with various updates through to February 1999. Distance 3.5 was downloaded by over 4000 users, from around 120 countries.\nExtension of Distance 3.5 to become Distance 4 began in 1999, and the software was first previewed at training workshops in summer 2000.\n\nAfter various public beta versions, Distance 4.0 was released in 2002, followed by Distance 4.1 in 2003 and Distance 5.0 in 2006. This last version had a major new feature in the form of a link to the free statistical software R, thereby facilitating a major expansion in the analytical capabilities available to Distance users.\nDistance 6.0 made use of this feature to include a new density surface modelling analysis engine, written as a library in R. Distance 6 was released in July 2009, with Distance 6.2 (containing new features and bug releases) following in May 2014.\n\nOctober 2016 brought the release of Distance 7, including the new simulation engine and multi-analysis engine. Distance 7.1 (July 2017) contained some new features; Distance 7.2 (June 2018) included the addition of point transect analyses in both MRDS and DSM; Distance 7.3 (February 2019) added a Shape Import Wizard; Distance 7.4 (May 2022) added features to analyze Camera Trap Distance Sampling data; and Distance 7.5 (September 2022) marked a switch from 32-bit to 64-bit R for the R-based engines.\n\nWe are still actively developing the software, incorporating new features and extending current ones. If you have any comments or suggestions about the program, we’d love to hear from you!\n\n\nThe below people have been involved in the development of Distance but no-longer take an active role on the team (though may still be working on distance sampling related issues).\n\nDavid R. Anderson passed away in 2020. He was formerly Leader of the Colorado Cooperative Fish and Wildlife Research Unit, USA, before retiring in May 2003 and becoming emeratus Professor of Fishery and Wildlife Biology at Colorado State University.\nJon Bishop was formerly a post-doctoral research fellow within CREEM at the University of St Andrews and now works at the University of Birmingham.\nKenneth P. Burnham is emeratus Professor of Biological Statistics at Colorado State University, Fort Collins, USA, and was formerly Assistant Leader of the Colorado Cooperative Fish and Wildlife Research Unit.\nSharon L. Hedley is a consultant statistician based in Fife, Scotland.\nFernanda Marques works for Funbio (Brazilian Biodiversity Fund) in Brazil. She was formerly a graduate student in the School of Mathematics and Statistics, University of St. Andrews.\nDave Miller is a research statistician with Biomathematics and Statistics Scotland.\nJohn H. Pollard is a software engineer and was also formerly a graduate student in the School of Mathematics and Statistics at the University of St. Andrews.\nSamantha Strindberg is a quantitative ecologist working in the Living Landscapes Program at the Wildlife Conservation Society, New York, USA. She was formerly a graduate student in the School of Mathematics and Statistics, University of St. Andrews, Scotland.",
+    "crumbs": [
+      "History"
+    ]
+  },
+  {
+    "objectID": "history/distancehistory.html#development-team-alumni",
+    "href": "history/distancehistory.html#development-team-alumni",
+    "title": "History",
+    "section": "",
+    "text": "The below people have been involved in the development of Distance but no-longer take an active role on the team (though may still be working on distance sampling related issues).\n\nDavid R. Anderson passed away in 2020. He was formerly Leader of the Colorado Cooperative Fish and Wildlife Research Unit, USA, before retiring in May 2003 and becoming emeratus Professor of Fishery and Wildlife Biology at Colorado State University.\nJon Bishop was formerly a post-doctoral research fellow within CREEM at the University of St Andrews and now works at the University of Birmingham.\nKenneth P. Burnham is emeratus Professor of Biological Statistics at Colorado State University, Fort Collins, USA, and was formerly Assistant Leader of the Colorado Cooperative Fish and Wildlife Research Unit.\nSharon L. Hedley is a consultant statistician based in Fife, Scotland.\nFernanda Marques works for Funbio (Brazilian Biodiversity Fund) in Brazil. She was formerly a graduate student in the School of Mathematics and Statistics, University of St. Andrews.\nDave Miller is a research statistician with Biomathematics and Statistics Scotland.\nJohn H. Pollard is a software engineer and was also formerly a graduate student in the School of Mathematics and Statistics at the University of St. Andrews.\nSamantha Strindberg is a quantitative ecologist working in the Living Landscapes Program at the Wildlife Conservation Society, New York, USA. She was formerly a graduate student in the School of Mathematics and Statistics, University of St. Andrews, Scotland.",
+    "crumbs": [
+      "History"
+    ]
+  },
+  {
+    "objectID": "resources/citations.html",
+    "href": "resources/citations.html",
+    "title": "Citations for distance sampling software",
+    "section": "",
+    "text": "Distance for Windows preferred citation\n\n\n\n\n\n\nThomas, L., S.T. Buckland, E.A. Rexstad, J. L. Laake, S. Strindberg, S. L. Hedley, J. R.B. Bishop, T. A. Marques, and K. P. Burnham. 2010. Distance software: design and analysis of distance sampling surveys for estimating population size. Journal of Applied Ecology 47: 5-14. DOI: 10.1111/j.1365-2664.2009.01737.x\n\n\n\n\n\n\n\n\n\n\n\nDistance R package preferred citation\n\n\n\n\n\n\nMiller, D. L., Rexstad, E., Thomas, L., Marshall, L., & Laake, J. L. (2019). Distance Sampling in R. Journal of Statistical Software, 89(1), 1–28. DOI: 10.18637/jss.v089.i01",
+    "crumbs": [
+      "Citations for distance sampling software"
+    ]
+  },
+  {
+    "objectID": "resources/whatisds.html",
+    "href": "resources/whatisds.html",
+    "title": "What is distance sampling?",
+    "section": "",
+    "text": "What is distance sampling?\n\n\n\nDistance sampling is a widely used methodology for estimating animal density or abundance. Its name derives from the fact that the information used for inference are the recorded distances to objects of interest (usually animals) obtained by surveying lines or points. In the case of lines the perpendicular distances to detected animals are recorded, while in the case of points the radial distances from the point to detected animals are recorded. A key underlying concept is that the probability of detecting an animal decreases as its distance from the observer increases. Much of distance sampling methodology is concentrated on detection functions, which model the probability of detecting an animal, given its distance from the transect.\nThe below animation illustrates a simple line transect survey. As the observer moves along the transects (red line, showing progress along the current transect), objects are detected with a probability dependent on their distance from the observer (blue points are detected). Distances to the objects are recorded in the histogram. The histogram shows a characteristic decrease in frequency as distance increases — it is this relationship that is modelled by the detection function.\n\n\n\nAn animation showing an example of a distance sampling line transect survey, as the observer moves along lines, objects are detected and their observed distances are reflected in an updated histogram\n\n\nCode to generate the above figure may be found here.",
+    "crumbs": [
+      "What is distance sampling?"
+    ]
   }
 ]

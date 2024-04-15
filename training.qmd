@@ -1,0 +1,7 @@
+---
+title: Training
+---
+
+# Training
+- [workshops](https://workshops.distancesampling.org)
+- [case studies](https://examples.distancesampling.org)

@@ -1,0 +1,7 @@
+---
+title: History landing
+---
+
+- [Authors](authors.qmd)
+- [Sponsors](distancesponsors.qmd)
+- [History](distancehistory.qmd)

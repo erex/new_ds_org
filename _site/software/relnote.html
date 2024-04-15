@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Distance for Windows release notes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../training.html"> 
+<span class="menu-text">Training</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-software" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Software</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-software">    
+        <li>
+    <a class="dropdown-item" href="../software/downloaddistwin.html">
+ <span class="dropdown-text">Distance 7.5 download</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../software/activity.html">
+ <span class="dropdown-text">Activity for CTDS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../software/Rpackages.html">
+ <span class="dropdown-text">R packages</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../resources/citations.html">
+ <span class="dropdown-text">Citations for distance sampling software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources/whatisds.html">
+ <span class="dropdown-text">What is distance sampling?</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources/books_and_papers.html">
+ <span class="dropdown-text">Books and papers</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources/distancelist.html">
+ <span class="dropdown-text">E-mail list</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-history" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">History</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-history">    
+        <li>
+    <a class="dropdown-item" href="../history/authors.html">
+ <span class="dropdown-text">Authors</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../history/distancesponsors.html">
+ <span class="dropdown-text">Sponsors</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../history/distancehistory.html">
+ <span class="dropdown-text">History</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">Images and hero</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/distancesamp"> <i class="bi bi-twitter-x" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/distancedevelopment">
+ <span class="dropdown-text">Repositories</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/DistanceDevelopment/distance-bugs/issues">
+ <span class="dropdown-text">Report a bug (Distwin)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/DistanceDevelopment/Distance/issues">
+ <span class="dropdown-text">Report a bug (R package)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:distance@st-andrews.ac.uk"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#installation-notes" id="toc-installation-notes" class="nav-link active" data-scroll-target="#installation-notes">Installation Notes</a>
+  <ul class="collapse">
+  <li><a href="#system-requirements-for-distance-7.5" id="toc-system-requirements-for-distance-7.5" class="nav-link" data-scroll-target="#system-requirements-for-distance-7.5">System Requirements for Distance 7.5</a>
+  <ul class="collapse">
+  <li><a href="#operating-system-and-hardware-requirements" id="toc-operating-system-and-hardware-requirements" class="nav-link" data-scroll-target="#operating-system-and-hardware-requirements">Operating System and Hardware Requirements</a></li>
+  <li><a href="#r-statistical-software" id="toc-r-statistical-software" class="nav-link" data-scroll-target="#r-statistical-software">R Statistical Software</a></li>
+  <li><a href="#windows-script-5.6" id="toc-windows-script-5.6" class="nav-link" data-scroll-target="#windows-script-5.6">Windows Script 5.6</a></li>
+  <li><a href="#pdf-file-reader" id="toc-pdf-file-reader" class="nav-link" data-scroll-target="#pdf-file-reader">PDF file Reader</a></li>
+  <li><a href="#problems-with-install" id="toc-problems-with-install" class="nav-link" data-scroll-target="#problems-with-install">Problems with Install</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Distance for Windows release notes</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Distance 7.5 Release 2]</p>
+<blockquote class="blockquote">
+<p>Release Notes - February 2023</p>
+</blockquote>
+<p><em>Contents</em></p>
+<ul>
+<li>Installation Notes</li>
+<li>Upgrading from previous versions of Distance</li>
+<li>Uninstalling Distance</li>
+<li>Distance-sampling email list</li>
+<li>Current restrictions</li>
+<li>New features, resolved issues and known problems</li>
+<li>Reporting problems</li>
+<li>Appendix 1: Files Added During Installation</li>
+</ul>
+<section id="installation-notes" class="level1">
+<h1>Installation Notes</h1>
+<section id="system-requirements-for-distance-7.5" class="level2">
+<h2 class="anchored" data-anchor-id="system-requirements-for-distance-7.5">System Requirements for Distance 7.5</h2>
+<section id="operating-system-and-hardware-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="operating-system-and-hardware-requirements">Operating System and Hardware Requirements</h3>
+<p>Any modern desktop PC will have no problem installing and running Distance 7.5. It requires about 90MB of space on your hard drive, and either Windows 7, 8 or 10 operating systems. (Distance will likely also run under older versions of Windows operating systems; however this is no longer actively supported. If you are using a legacy operating system, be aware that the practical minimum hardware requirements are a Pentium II Processor, 48MB RAM, 800x600 SVGA monitor with 256 colors.)</p>
+</section>
+<section id="r-statistical-software" class="level3">
+<h3 class="anchored" data-anchor-id="r-statistical-software">R Statistical Software</h3>
+<p>Three analysis engines and the simulation engine in Distance 7 are implemented as libraries in the free statistical software R. These are the Mark Recapture Distance Sampling (mrds), Density Surface Modelling (dsm), Multi-Analysis Distance Sampling (mads) and the Distance Sampling Simulations (dsims) libraries. If you would like to run any of these engines, you must install R software on your computer first. You can download R from the R Project web site, http://www.r-project.org/. You need the base precompiled binary distribution for Windows.</p>
+<ul>
+<li>The R libraries in this version of Distance (7.5 release 2) were tested and compiled using R version 4.2.2. You will need to install this version of R and point Distance to it in the R Options after selecting the Preferences option from the Tools menu.</li>
+</ul>
+<p>Please note that R is under very active development, and new versions are released quite frequently. Unfortunately, new versions are sometimes not compatible with libraries compiled in old versions. We will endeavor to test our libraries with each new version as it appears, and update are libraries as required. We will post any information we have about compatibility with new versions on the Distance-sampling email discussion list (see below), so please check there for latest information.</p>
+<p>You can download and install R after you have installed Distance, and you can run Distance without having R installed - but you will get an error message if you try to run the MRDS, DSM, MA analysis engines or the simulation engine without R.</p>
+<p>For more information about the R-Distance link, see the Distance online help, Chapter 7. There you will find a topic "R Statistical Software".</p>
+</section>
+<section id="windows-script-5.6" class="level3">
+<h3 class="anchored" data-anchor-id="windows-script-5.6">Windows Script 5.6</h3>
+<p>If you are trying to run Distance with a legacy version of Windows (before Windows Vista) you may need to install Windows Script, if it is not already on your machine. The Distance installation program contains a copy of the English language verion of Windows Script 5.6, and you have the option to install this as part of the program setup. If you are using a non-English version of Windows, you will probably want to download and install the version of Windows Script appropriate for your language -- you can get this from http://www.microsoft.com/scripting/. If you have already installed the appropriate version of Windows Script on your computer, then you should say "No" when the Distance setup program asks you if you want to install its version.</p>
+</section>
+<section id="pdf-file-reader" class="level3">
+<h3 class="anchored" data-anchor-id="pdf-file-reader">PDF file Reader</h3>
+<p>The Distance User’s Guide is also available in Adobe PDF format. To read this file (which is installed in the Distance/Help directory), you need software capable of reading PDF files. One example is Adobe Acrobat reader, available for free from http://www.adobe.com, but other free software is available.</p>
+<section id="running-distance-under-other-operating-systems" class="level4">
+<h4 class="anchored" data-anchor-id="running-distance-under-other-operating-systems">Running Distance under other operating systems</h4>
+<p>To run Distance under non-Windows operating systems, a Windows emulator is required. For some tips, see the section on "Running Distance on other operating systems" at http://distancesampling.org/distanceextras.html.</p>
+</section>
+<section id="running-distance-in-extended-character-systems" class="level4">
+<h4 class="anchored" data-anchor-id="running-distance-in-extended-character-systems">Running Distance in extended character systems</h4>
+<p>If you use an extended character operating system (e.g., Chinese, Japanese or Korean language Windows) then you need to make the following change to the program preferences before you start using the program. Once you have installed Distance:</p>
+<ol type="1">
+<li>Start Distance</li>
+<li>From the menu, choose Tools | Preferences...</li>
+<li>Click on the General tab. Un-tick the box "Store results in compressed format in project databases"</li>
+<li>Click OK.</li>
+</ol>
+<p>You need to make this change because by default Distance compresses the results from analyses when it stores them in project databases, and at present it cannot decode these results on extended character operating systems.</p>
+<p><em>Installing Distance under Windows</em></p>
+<p>The Distance setup program has a filename of the form d[x]release[y].exe, where [x] is derived from the version number and y is the release number. Double-click on this file to run it. You are then guided through the installation. If you have an older operating system, you may be asked to re-boot again early in the installation process and then restart the install. You may also be asked to reboot after install has finished. You need to have administrator privileges to install Distance.</p>
+<p>Once Distance is installed, you can run Distance 7 from the Programs | Distance 7 folder off the Start menu on your windows Taskbar.</p>
+<p>A list of the files added by Distance installation is given in Appendix 1.</p>
+</section>
+</section>
+<section id="problems-with-install" class="level3">
+<h3 class="anchored" data-anchor-id="problems-with-install">Problems with Install</h3>
+<p>Problems encountered when installing Distance are recorded here: https://github.com/DistanceDevelopment/distance-bugs</p>
+<p>The main installation issues encountered include conflicts with antivirus software and problems opening dlls. Conflicts with antivirus software can be resolved by temporarily disabling the antivirus software prior to installation. Issues relating to dll conflicts are more complicated, please contact us at <a href="mailto:distance@st-andrews.ac.uk">distance@st-andrews.ac.uk</a> and we will be happy to try to help you resolve the problem. We now build an alternative installer to try to get round these issues.</p>
+<p>Another common issue is a warning produced by Windows Defender:</p>
+<p>Windows protected your PC Microsoft Defender SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk.</p>
+<p><u>More info</u></p>
+<p>We are working on a resolution to this problem, but in the meantime please be assured that Distance is perfectly safe to install, and the following is a work-around to the error message.</p>
+<ul>
+<li>Click on the <u>More info</u> link.</li>
+<li>You should see a button Run anyway.</li>
+<li>Click on the Run anyway button and the installation should proceed as normal.</li>
+</ul>
+<p>If you are having a problem that is not listed there, please (1) check your computer meets the minimum requirements (above); (2) check the archives of the distance-sampling discussion list (see below); (3) look at the file C:\Program Files (x86)\Distance 7\Install.log to see if it gives you any clues as to the problem; (4) contact the program authors by email: <a href="distance@st-andrews.ac.uk">distance@st-andrews.ac.uk</a>.</p>
+<p><em>Sample Projects</em></p>
+<p>Information on the sample projects is given in Chapter 2 of the online help.</p>
+<p><strong>Upgrading from previous versions of Distance</strong></p>
+<p>Distance 7.5 will install over any previous Distance 7.x installations, it is not necessary to remove these installations prior to installing Distance 7.5. Distance 7.5 will register itself to open .dst files when you double-click on them. If you open a Distance project created in a previous version, you will be asked if you wish to upgrade it, and if you say "Yes", Distance will perform the upgrade automatically.</p>
+<p>When upgrading Distance you should also upgrade to the recommended version of R. Failing to do so may mean that you continue using old versions of the R packages or the newer R packages may not work in the older version of R. Note that, to ensure that Distance installs the new R packages on the first run of an analysis that uses one of the R-based analysis engines, please take the following steps:</p>
+<ul>
+<li>Choose Tools | Preferences | R Options</li>
+<li>Tick the box that says Re-install analysis / simulation engine libraries to original versions on the next run.</li>
+</ul>
+<p>Note also that to successfully upgrade the R packages when you run an analysis, all other instances of R need to be closed.</p>
+<p>You are advised to re-run all analyses as the analysis engines are improved with each iteration of the software.</p>
+<p>If you have a copy of Distance 6, 5, 4 or 3.5 on your machine, you don't have to uninstall it before installing Distance 7. Distance 7 will install into a different directory, and you can carry on using both the older and new version of the software if you wish. However, please note that if you upgrade a Distance project using Distance 7, you will not be able to open it in any of the previous versions. Should you wish to do this, you should copy the project before upgrading, so you can open the old files in the old version. One convenient way to copy a project from within Distance is to use File | Export project.</p>
+<p>Please let us know if you have any problems transitioning to the new version of Distance.</p>
+<p><strong>Uninstalling Distance</strong></p>
+<p>To uninstall Distance, click on the Add/Remove Programs icon in the Windows Control Panel. Choose Distance 7 from the list and click the Add/Remove button. During the removal process, you will be asked whether you want to remove shared components. Press "Yes to All". The install program may not be able to remove all of the folders under C:\Program Files\Distance7\ if you have changed any files in them (e.g., by creating new projects in \Sample projects). In this case you will have to remove these folders manually after the installation has finished.</p>
+<p><strong>Distance-sampling email discussion list</strong></p>
+<p>The purpose of this list is to promote the sharing of ideas and information among researchers and practitioners interested in distance sampling techniques. It is a relatively low-volume list, and has been running since 1998, first as a JISCmail list, but more recently as a Google Group.</p>
+<p>Suitable topics for posting include: questions about survey design and analysis, new methodological developments, use of software tools (program Distance and other software), news about upcoming meetings, workshops and conferences where distance methods will be discussed, jobs in distance sampling-related fields.</p>
+<p>You can browse the list without joining, by navigating to groups.google.com and searching for the group distance-sampling If you have a Google account, you can join via that; alternatively, you can send a blank email to distance-sampling+subscribe@googlegroups. In response, you will receive a message with a link button to "Join this group", please follow the instructions. Once you have completed the steps you will receive a second E-mail asking you again to confirm via clicking on the "Join this group" button. You should then be informed that you have been successfully subscribed. See http://distancesampling.org/distancelist.html for further information.</p>
+<p>Posts from the old JISCmail mailing list are archived on the Google Group. Please check the archive of previous messages before posting!</p>
+<p><strong>Current restrictions for Distance 7.5 Release 2</strong></p>
+<p>MCDS Analysis Engine</p>
+<p>Maximum number of covariates and factor levels is listed in the manual, under “Limitations”</p>
+<p>When covariates are specified, only half-normal and hazard-rate key functions allowed</p>
+<p>Cannot force the fitted function to be monotonic decreasing</p>
+<p>When cluster size is a covariate, stratified analyses are not allowed</p>
+<p>Cannot have non-factor covariate value -9999.</p>
+<p>MRDS Analysis Engine</p>
+<p>Ignores units conversion specified in the Units tab of the Data Filter</p>
+<p>MA Analysis Engine</p>
+<p>Line transect surveys only</p>
+<p>Single observer</p>
+<p>Ignores units conversion specified in the Units tab of the Data Filter</p>
+<p>Simulation Engine</p>
+<p>Line and point transect surveys excluding adjusted angle and equal angle zig zag designs</p>
+<p>Single observer</p>
+<p>Only takes the truncation distance from Data Filter (binned data can be generated in dsims R package)</p>
+<p>Minus sampling only</p>
+<p>All units must be the same for region, design and detection function</p>
+<p>Strata must have unique names/labels</p>
+<p>Doesn't support data-linked study region</p>
+<p><strong>New features, resolved issues and known problems</strong></p>
+<p>Below is a summary of new features and resolved issues in each recent version of Distance. For an up to date list, and a list of known problems, please visit https://github.com/DistanceDevelopment/distance-bugs</p>
+<p>Distance 7.5 Release 2 - Uses latest version of R (4.2.2) with updated versions of dssd, dsims, Distance and mrds which have various bug fixes. Fix in dsims now allows for stratum level designs within simulations at the global level.</p>
+<p>Distance 7.5 Release 1 - Uses latest version of R (4.2.1) with updated versions of mrds, dsm and mads which have various bug fixes. In addition, the R package DSsim has been replaced with dsims. Includes an additional example project on the analysis of point transect removal method data. Fixed bug relating to renaming a new map before you have opened it.</p>
+<p>Distance 7.4 Release 2 - Uses R version of 4.1.2. This release has an important bug fix to correct the field names stored in the survey definition for cluster size, object, observer and detected. Anyone using these fields with projects created in Distance 7.4 release 1 should check they are correctly specified within the survey definition.</p>
+<p>Distance 7.4 Release 1 - Uses latest version of R (4.1.2) with updated versions of mrds, dsm, DSsim and mads which have various bug fixes.</p>
+<p>Distance 7.3 Release 2 - Uses latest version of R (4.0.1) with updated versions of mrds, dsm, DSsim and mads which have various bug fixes.</p>
+<p>Distance 7.3 Release 1 - Addition of a shape import wizard. Bug fixes in simulation engine. Uses latest version of R (3.5.1) with updated versions of dsm and DSsim.</p>
+<p>Distance 7.2 Release 1 - Mrds and dsm analyses can now be performed for point transects as well as line transects. Uses latest version of R (3.5.0) with updated versions of mrds, dsm and DSsim.</p>
+<p>Distance 7.1 Release 1 - Uses latest version of R (3.4.1); all R packages updated. New dsm analytical variance calculation, concurvity plot and prediction plot using ggplot2 package. Simulations now support populations that occur in clusters and other individual level covariates.</p>
+<p>Distance 7.0 Release 1 - the public release following the trial of beta 4 during workshops. In addition, we have added an alternative variance calculation option in dsm and point transect designs have been added to the simulation engine. The R packages mrds and dsm have also been upgraded.</p>
+<p>Distance 7.0 Beta 4 - now implements designs (generating multiple surveys) in the simulation engine. Fixes dsm bugs: rqgam.check is only called when appropriate, gam.check has been added to output for all dsm models, alpha value for confidence intervals is now passed to the R library. It relies on the latest version or R 3.3.1 and installs packages built under this version of R.</p>
+<p>Distance 7.0 Beta 3 - relies on the latest version or R 3.2.2 and installs packages built under this version of R. This seems to fix a strange bug with dsm variance calculations when an error message was being generated because object appeared to have missing components.</p>
+<p>Distance 7.0 Beta 2 - provides a major bug fix to the design engine.</p>
+<p>Distance 7.0 Alpha 1 and Distance 7.0 Beta 1 were both using the Distance 6 design properties component. If you have Distance 6 installed you would not have noticed any problems in Distance 7.0. There have been no updates to the design engine and so everything would have been functioning correctly if you succeeded in loading the design inputs page.</p>
+<p>Distance 7.0 Beta 1</p>
+<p>Here’s a brief list of new features, resolved issues and known problems in Distance 7.0 Beta 1, relative to 7.0 Alpha:</p>
+<p>General Interface Known Problems</p>
+<p>- About button does not work for Windows 7</p>
+<p>- Designs and Simulations will not run if region or strata names that they rely on are changed.</p>
+<p>MA Engine</p>
+<p>An option to specify which field contains species codes has been added</p>
+<p>The 'cv' bug in covariate uncertainty has been fixed</p>
+<p>Covariate uncertainty on multiple covariates no longer causes an error</p>
+<p>Note that the MA engine requires that the MRDS analysis object exist in the workspace so the option to remove these objects must be switched off</p>
+<p>R packages (mads, mrds, dsm and DSsim) have been updated to latest versions and compiled under R 3.2.2</p>
+<p>See NEWS file in the relevant packages for further information of changes and/or bug fixes</p>
+<p>Here's a brief list of new features, resolved issues and known problems in Distance 7.0, relative to 6.2:</p>
+<p>We have made 2 major additions, the multi-analysis (MA) engine and the simulation engine. The MA analysis engine deals with unidentified sightings, covariate uncertainty and model uncertainty. The simulation engine allows you to try out different designs and see how they perform for your particular study.</p>
+<p><strong>Reporting problems</strong></p>
+<p>To report a new problem, please visit https://github.com/DistanceDevelopment/distance-bugs and click the 'New Issue' button or E-mail us at distance@st-andrews.ac.uk.</p>
+<p><strong>Appendix 1: Files added during Distance 7 Installation</strong></p>
+<p>Note - if older versions of these files are already present, they will be overwritten. If newer versions are already present, they will not be changed. (An exception to this is RichEd32.dll, which caused some incompatibility problems in test installations. This file will only be installed if one is not present on the target system.) If you selected the backup option during Setup, backups of all overwritten files will be stored in the BACKUP subdirectory, off the Distance 7 program directory. A log of all files installed is kept in the program directory in the file install.log.</p>
+<p><strong>Common Files \ Data Dynamics folder</strong></p>
+<p>Actbar2.ocx</p>
+<p><strong>Common files \ ESRI</strong></p>
+<p>Mo20.ocx AF20.dll Shape20.dll pe81.dll sg81.dll mtch.dll JetTable20.dll</p>
+<p><strong>Microsoft \ Shared Tools \ DAO</strong></p>
+<p>Dao2535.tlb Dao250.dll Jettable20.dll Msjet35.dll Msjint35.dll Msjter35.dll Msrd2x35.dll dbajet32.dll</p>
+<p><strong>Windows System 32 folder</strong></p>
+<p>Asycfilt.dll Comcat.dll Comctl32.ocx Comdlg32.ocx Expsrv.dll Mfc42.dll Msvbvm60.dll Msvcirt.dll Msvcp60.dll Msvcrt.dll Msvcrt40.dll mtch.dll Oleaut32.dll Oledlg.dll OlePro32.dll Riched32.dll Scrrun.dll Stdole2.tlb vb5db.dll vbar332.dll vbscript.dll VsFlex7d.ocx ccrpdbs6.dll tab32x30.ocx mschrt20.ocx richtx32.ocx dwAXExtn.dll Dwsdes32.dll D7Zip.dll PolarZip.ocx PolarZipSpan.dll RichEd32.dll Splitter.ocx</p>
+<p><strong>Program Files (x86) \ Distance7</strong></p>
+<p>Ec.exe DistanceProject.ico Distance.exe D7DbEng.dll CDlg.dll CTmr.dll CSDesc.ocx LLine.ocx LogStr.dll LogWin.ocx SList.ocx PrjParams.dll D7Map.ocx D7Legend.ocx DistIni.mdb ID7NEng.dll D7NEH.exe D7NSvr.dll D7NEIUtil.dll D7CDSNEI.dll D7MRDSNEI.dll D7DSMNEI.dll D7MANEI.dll D7SIMNEI.dll MCDS.exe D7DesNEI.dll D7DesEng.dll D7SvyNEI.dll D7DFPrp.ocx D7MDPrp.ocx D7CDSPrp.ocx D7MRDSPrp.ocx D7MAPrp.ocx D7SIMPrp D7DSMPrp.ocx D7DesPrp.ocx D7SvyPrp.ocx D7DesDet.ocx D7SPWiz.dll DeIDWiz.dll DistanceLogo.jpg ReadMe.rtf support.r dsm.support.r mrds.support.r mads.support.r dssim.support.r</p>
+<p><strong>Program Files (x86) / Distance / Help</strong></p>
+<p>distance.chm distance.pdf Sponsors.rtf Authors.rtf DataEntryIntroduction.rtf DataEntryGlobal.rtf DataEntryStratum.rtf DataEntryObservation.rtf DataEntryFinished.rtf TipOfTheDay.txt</p>
+<p><strong>Program Files (x86) / Distance / Sample Projects</strong></p>
+<p>[a number of sample project files]</p>
+<p><strong>Program Files (x86) / Distance / RPackages</strong></p>
+<p>Copies of all the packages required by the Distance engines that use R.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><strong>Distance for Windows citation:</strong> <br> Thomas, L., S.T. Buckland, E.A. Rexstad, J.L. Laake, S. Strindberg, <br> S.L. Hedley, J.R.B. Bishop, T.A. Marques, and K.P. Burnham. 2010. <br> Distance software: design and analysis of distance sampling surveys for <br> estimating population size. Journal of Applied Ecology 47: 5-14. <br> DOI: <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2009.01737.x">10.1111/j.1365-2664.2009.01737.x</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="mailto:distance@st-andrews.ac.uk"><strong>Contact us via email</strong></a></p>
+</div>
+    <div class="nav-footer-right">
+<p><strong>Distance R package citation:</strong> <br> Miller, D.L., Rexstad, E., Thomas, L., Marshall, L., <br> and Laake, J.L. (2019). Distance Sampling in R. <br> Journal of Statistical Software, 89(1), 1–28. <br> DOI: <a href="https://doi.org/10.18637/jss.v089.i01">10.18637/jss.v089.i01</a> <br></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

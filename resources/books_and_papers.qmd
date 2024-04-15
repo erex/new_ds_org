@@ -18,16 +18,16 @@ Advanced topics in distance sampling analysis are described in:
 
 A book discussing practical considerations, along with developments in the decade 2004-2014 can be found in the recent book:
 
-- Buckland, S.T., Rexstad, E., Marques, T.A. and Oedekoven, C.S. 2015. [Distance Sampling: Methods and Applications](http://www.springer.com/us/book/9783319192185). Springer, Heidelberg.  [Accompanying website with case studies](https://synergy.st-andrews.ac.uk/ds-manda/).
+- Buckland, S.T., Rexstad, E., Marques, T.A. and Oedekoven, C.S. 2015. [Distance Sampling: Methods and Applications](http://www.springer.com/us/book/9783319192185). Springer, Heidelberg.  [Accompanying website with case studies](https://www.creem.st-andrews.ac.uk/software/ds-manda/).
 
 ### Papers
 
-Two introductory articles are available for download here:
+An introductory article is available here:
 
 - [Marques, T.A., S.T. Buckland, D.L. Borchers, E. Rexstad and L. Thomas](downloads/dist_encyc_statsci.pdf). 2011. Distance sampling. Pp 398-400 in Lovric, M. (Ed.), International Encyclopedia of Statistical Science, Springer-Verlag, Berlin. DOI: [10.1007/978-3-642-04898-2_214](https://doi.org/10.1007/978-3-642-04898-2_214)
 
 Additionally, the Open Access paper:
 
-- [Distance software: design and analysis of distance sampling surveys for estimating population size](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2009.01737.x/pdf)
+- Thomas, L., S.T. Buckland, E.A. Rexstad, J. L. Laake, S. Strindberg, S. L. Hedley, J. R.B. Bishop, T. A. Marques, and K. P. Burnham. 2010. Distance software: design and analysis of distance sampling surveys for estimating population size.  Journal of Applied Ecology 47: 5-14. DOI: [10.1111/j.1365-2664.2009.01737.x](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2009.01737.x)
 
-from Journal of Applied Ecology, which describes the various elements of Distance may be of interest. This paper is the *default citation for Distance for Windows*.
+is the *default citation for Distance for Windows*.

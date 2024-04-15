@@ -14,7 +14,7 @@ Projects will now open in Distance 7.5 by default and you will be asked to "upgr
 
 Please read the "Use Agreement" below before downloading.
 
-**Before installing Distance 7.5, we recommend you read the [latest release notes](downloads/D75Release2Notes.rtf).**
+**Before installing Distance 7.5, we recommend you read the [latest release notes](relnote.qmd).**
 
 After installing Distance 7.5 you should check the "Additional information" section, below, for any patches that fix last-minute problems.
 
