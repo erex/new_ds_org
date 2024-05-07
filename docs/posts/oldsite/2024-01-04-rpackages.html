@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Laura Marshall">
+<meta name="dcterms.date" content="2024-01-04">
+<meta name="description" content="Release of mrds 2.3.0 and Distance 1.0.9 on CRAN. An important update is that the default encounter rate variance estimator for point transect surveys has now been changed from the ‘P3’ estimator to the ‘P2’ estimator.">
 
-<title>Distance sampling org 2024</title>
+<title>New CRAN release of mrds and Distance packages</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/logo.gif" rel="icon" type="image/gif">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logo.gif" rel="icon" type="image/gif">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,74 +70,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-sample-listings .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 5,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-sample-listings'] = new List('listing-sample-listings', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -146,11 +88,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./training.html"> 
+    <a class="nav-link" href="../../training.html"> 
 <span class="menu-text">Training</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -159,15 +101,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-software">    
         <li>
-    <a class="dropdown-item" href="./software/downloaddistwin.html">
+    <a class="dropdown-item" href="../../software/downloaddistwin.html">
  <span class="dropdown-text">Distance 7.5 download</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./software/activity.html">
+    <a class="dropdown-item" href="../../software/activity.html">
  <span class="dropdown-text">Activity for CTDS</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./software/Rpackages.html">
+    <a class="dropdown-item" href="../../software/Rpackages.html">
  <span class="dropdown-text">R packages</span></a>
   </li>  
     </ul>
@@ -178,23 +120,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
         <li>
-    <a class="dropdown-item" href="./resources/citations.html">
+    <a class="dropdown-item" href="../../resources/citations.html">
  <span class="dropdown-text">Citations for distance sampling software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./resources/whatisds.html">
+    <a class="dropdown-item" href="../../resources/whatisds.html">
  <span class="dropdown-text">What is distance sampling?</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./resources/books_and_papers.html">
+    <a class="dropdown-item" href="../../resources/books_and_papers.html">
  <span class="dropdown-text">Books and papers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./resources/distancelist.html">
+    <a class="dropdown-item" href="../../resources/distancelist.html">
  <span class="dropdown-text">E-mail list</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./resources/dbib.html">
+    <a class="dropdown-item" href="../../resources/dbib.html">
  <span class="dropdown-text"></span></a>
   </li>  
     </ul>
@@ -205,21 +147,21 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-history">    
         <li>
-    <a class="dropdown-item" href="./history/authors.html">
+    <a class="dropdown-item" href="../../history/authors.html">
  <span class="dropdown-text">Authors</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./history/distancesponsors.html">
+    <a class="dropdown-item" href="../../history/distancesponsors.html">
  <span class="dropdown-text">Sponsors</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./history/distancehistory.html">
+    <a class="dropdown-item" href="../../history/distancehistory.html">
  <span class="dropdown-text">History</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">News</span></a>
   </li>  
 </ul>
@@ -263,7 +205,45 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">New CRAN release of mrds and Distance packages</h1>
+                  <div>
+        <div class="description">
+          Release of <code>mrds 2.3.0</code> and <code>Distance 1.0.9</code> on CRAN. An important update is that the default encounter rate variance estimator for point transect surveys has now been changed from the ‘P3’ estimator to the ‘P2’ estimator.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">software</div>
+                <div class="quarto-category">Distance</div>
+                <div class="quarto-category">mrds</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Laura Marshall </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 4, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -271,280 +251,55 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#recent-news" id="toc-recent-news" class="nav-link active" data-scroll-target="#recent-news">Recent news</a></li>
+  <li><a href="#full-list-of-changes-and-updates" id="toc-full-list-of-changes-and-updates" class="nav-link active" data-scroll-target="#full-list-of-changes-and-updates">Full list of changes and updates:</a>
+  <ul class="collapse">
+  <li><a href="#mrds" id="toc-mrds" class="nav-link" data-scroll-target="#mrds"><code>mrds</code></a></li>
+  <li><a href="#distance" id="toc-distance" class="nav-link" data-scroll-target="#distance"><code>Distance</code></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Distance sampling org 2024</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
+<p>This change will only make a difference to the variance estimate when there is variable survey effort (e.g.&nbsp;variable numbers of visits) between points, which is uncommon in practice. In the case that points are visited the same number of times these two estimators (‘P2’ and ‘P3’) are equivalent and there will be no difference in the variance estimates.</p>
+<p>This change to the default encounter rate estimator was made for consistency with the line transect estimator, where the equivalent ‘R2’ estimator is the default, and also with Distance for Windows where ‘R2’ and ‘P2’ are the defaults for line and point transect surveys, respectively. ‘R2’ and ‘P2’ are both design-based variance estimators, while ‘R3’ and ‘P3’ are model-derived; the design-based line transect estimator was found to be superior when model assumptions fail (see Fewster et. al.&nbsp;2009, for details).</p>
+<p>These releases also address a number of reported issues within the packages. A full list of changes and updates is given below.</p>
+<p>Thanks to those who have made feature requests or reported issues. If you do find any problems, or want to suggest a new feature, please feel free to raise an issue at <a href="https://github.com/DistanceDevelopment/distance-bugs/issues" class="uri">https://github.com/DistanceDevelopment/distance-bugs/issues</a> or in the github page for each package</p>
+<ul>
+<li><a href="https://github.com/DistanceDevelopment/Distance/issues" class="uri">https://github.com/DistanceDevelopment/Distance/issues</a></li>
+<li><a href="https://github.com/DistanceDevelopment/mrds/issues" class="uri">https://github.com/DistanceDevelopment/mrds/issues</a></li>
+</ul>
+<section id="full-list-of-changes-and-updates" class="level2">
+<h2 class="anchored" data-anchor-id="full-list-of-changes-and-updates">Full list of changes and updates:</h2>
+<section id="mrds" class="level3">
+<h3 class="anchored" data-anchor-id="mrds"><code>mrds</code></h3>
+<p>Changes in version 2.3.0 (submitted to on CRAN 18/12/2023)</p>
+<ul>
+<li>The ‘P2’ estimator is now the default for estimating the encouter rate variance for point transect surveys. (Issue #65) <a href="https://github.com/DistanceDevelopment/mrds/issues/65" class="uri">https://github.com/DistanceDevelopment/mrds/issues/65</a></li>
+<li>Re-formatted the format section of the documentation for the book.tee.data (Issue #91) <a href="https://github.com/DistanceDevelopment/mrds/issues/91" class="uri">https://github.com/DistanceDevelopment/mrds/issues/91</a></li>
+<li>Ensure that the MCDS optimizer is not used for double observer models as this was generating errors. (Issue #89) <a href="https://github.com/DistanceDevelopment/mrds/issues/89" class="uri">https://github.com/DistanceDevelopment/mrds/issues/89</a></li>
+<li>Improved the documentation on initial values, lower and upper bounds in both the ddf and mrds_opt documentation (mrds_opt was renamed from mrds-opt which was not accessible via ?mrds-opt). (Issue #90) <a href="https://github.com/DistanceDevelopment/mrds/issues/90" class="uri">https://github.com/DistanceDevelopment/mrds/issues/90</a></li>
+</ul>
+</section>
+<section id="distance" class="level3">
+<h3 class="anchored" data-anchor-id="distance"><code>Distance</code></h3>
+<p>Changes in version 1.0.9 (accepted to CRAN 21/12/2023)</p>
+<ul>
+<li>Changed the default encounter rate estimator for point transect surveys from P3 to P2. (Issue #138) <a href="https://github.com/DistanceDevelopment/Distance/issues/138" class="uri">https://github.com/DistanceDevelopment/Distance/issues/138</a></li>
+<li>Fixed bug which produced NA’s when stratum names came after ‘Total’ in the alphabet. (Issue #158) <a href="https://github.com/DistanceDevelopment/Distance/issues/158" class="uri">https://github.com/DistanceDevelopment/Distance/issues/158</a></li>
+<li>Added additional documentation explaining the adjustment term options when covariates are in the model. (Issue #156) <a href="https://github.com/DistanceDevelopment/Distance/issues/156" class="uri">https://github.com/DistanceDevelopment/Distance/issues/156</a></li>
+<li>Fixed dht bootstrap to work when distbegin and distend are supplied but not distance. (Issue #147) <a href="https://github.com/DistanceDevelopment/Distance/issues/147" class="uri">https://github.com/DistanceDevelopment/Distance/issues/147</a></li>
+<li>Added a warning for the dht bootstrap when Sample.Label values are not unique across all strata. (Issue #157) <a href="https://github.com/DistanceDevelopment/Distance/issues/157" class="uri">https://github.com/DistanceDevelopment/Distance/issues/157</a></li>
+<li>Distance 1.0.9 depends on mrds &gt;= 2.3.0 due to re-named documentation page links.</li>
+</ul>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="10pct.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>Photo by Matthew Fainman on Unsplash</figcaption>
-</figure>
-</div>
-<section id="recent-news" class="level2">
-<h2 class="anchored" data-anchor-id="recent-news">Recent news</h2>
-<div id="listing-sample-listings" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Quarto,software,mrds" data-listing-date-sort="1713394800000" data-listing-file-modified-sort="1713343149680" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
-<div class="thumbnail">
-<p><a href="./posts/2024-04-18-second-post/index.html" class="no-external"></a></p><a href="./posts/2024-04-18-second-post/index.html" class="no-external">
-<p><img src="./posts/2024-04-18-second-post/month.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2024-04-18-second-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2024-04-18-second-post/index.html" class="no-external">second post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2024-04-18-second-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2024-04-18-second-post/index.html" class="no-external">blog post description about <code>mrds</code> hope you enjoy it</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2024-04-18-second-post/index.html" class="no-external">
-<div class="listing-date">
-18 Apr 2024
-</div>
-<div class="listing-author">
-Rexstad
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Quarto,software,Distance" data-listing-date-sort="1713308400000" data-listing-file-modified-sort="1713343080310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/2024-04-17-first-post/index.html" class="no-external"></a></p><a href="./posts/2024-04-17-first-post/index.html" class="no-external">
-<p><img src="./posts/2024-04-17-first-post/ETP.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2024-04-17-first-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2024-04-17-first-post/index.html" class="no-external">first post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2024-04-17-first-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2024-04-17-first-post/index.html" class="no-external">blog post description (appears underneath the title in smaller text) which is included on the listing page</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2024-04-17-first-post/index.html" class="no-external">
-<div class="listing-date">
-17 Apr 2024
-</div>
-<div class="listing-author">
-Rexstad
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="software,Distance,mrds" data-listing-date-sort="1704326400000" data-listing-file-modified-sort="1713365509269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="423">
-<div class="thumbnail">
-<p><a href="./posts/oldsite/2024-01-04-rpackages.html" class="no-external"></a></p><a href="./posts/oldsite/2024-01-04-rpackages.html" class="no-external">
-<!-- img(9CEB782EFEE6)[progressive=false, height=]:posts/oldsite/2024-01-04-rpackages.html -->
-</a><p><a href="./posts/oldsite/2024-01-04-rpackages.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/oldsite/2024-01-04-rpackages.html" class="no-external">New CRAN release of mrds and Distance packages</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/oldsite/2024-01-04-rpackages.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/oldsite/2024-01-04-rpackages.html" class="no-external">Release of <code>mrds 2.3.0</code> and <code>Distance 1.0.9</code> on CRAN. An important update is that the default encounter rate variance estimator for point transect surveys has now been changed from the ‘P3’ estimator to the ‘P2’ estimator.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/oldsite/2024-01-04-rpackages.html" class="no-external">
-<div class="listing-date">
-04 Jan 2024
-</div>
-<div class="listing-author">
-Laura Marshall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="software,Distance,mrds" data-listing-date-sort="1691017200000" data-listing-file-modified-sort="1713365436901" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
-<div class="thumbnail">
-<p><a href="./posts/oldsite/2023-08-03-rupdates23.html" class="no-external"></a></p><a href="./posts/oldsite/2023-08-03-rupdates23.html" class="no-external">
-<!-- img(9CEB782EFEE6)[progressive=false, height=]:posts/oldsite/2023-08-03-rupdates23.html -->
-</a><p><a href="./posts/oldsite/2023-08-03-rupdates23.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/oldsite/2023-08-03-rupdates23.html" class="no-external">New versions of Distance and mrds packages</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/oldsite/2023-08-03-rupdates23.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/oldsite/2023-08-03-rupdates23.html" class="no-external">We are pleased to announce the release of new versions of our R packages <code>Distance</code> and <code>mrds</code>. The new release adds the ability to fit detection functions (CDS and MCDS) using the same optimizer used by Distance for Windows.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/oldsite/2023-08-03-rupdates23.html" class="no-external">
-<div class="listing-date">
-03 Aug 2023
-</div>
-<div class="listing-author">
-Len Thomas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="software,dssd,dsims" data-listing-date-sort="1673481600000" data-listing-file-modified-sort="1713365386854" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="156">
-<div class="thumbnail">
-<p><a href="./posts/oldsite/2023-01-12-dssd-dsims.html" class="no-external"></a></p><a href="./posts/oldsite/2023-01-12-dssd-dsims.html" class="no-external">
-<!-- img(9CEB782EFEE6)[progressive=false, height=]:posts/oldsite/2023-01-12-dssd-dsims.html -->
-</a><p><a href="./posts/oldsite/2023-01-12-dssd-dsims.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/oldsite/2023-01-12-dssd-dsims.html" class="no-external">Design and Simulation R packages</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/oldsite/2023-01-12-dssd-dsims.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/oldsite/2023-01-12-dssd-dsims.html" class="no-external">We would like to make you aware that our design and simulation packages (<code>dssd</code> and <code>dsims</code>) are temporarily only available from our development repository on github.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/oldsite/2023-01-12-dssd-dsims.html" class="no-external">
-<div class="listing-date">
-12 Jan 2023
-</div>
-<div class="listing-author">
-Len Thomas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="software,Distance,mrds" data-listing-date-sort="1668556800000" data-listing-file-modified-sort="1713365364510" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="446">
-<div class="thumbnail">
-<p><a href="./posts/oldsite/2022-11-16-rupdates.html" class="no-external"></a></p><a href="./posts/oldsite/2022-11-16-rupdates.html" class="no-external">
-<!-- img(9CEB782EFEE6)[progressive=true, height=]:posts/oldsite/2022-11-16-rupdates.html -->
-</a><p><a href="./posts/oldsite/2022-11-16-rupdates.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/oldsite/2022-11-16-rupdates.html" class="no-external">New versions of R packages</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/oldsite/2022-11-16-rupdates.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/oldsite/2022-11-16-rupdates.html" class="no-external">Imminent release of new versions of our R packages <code>Distance</code> and <code>mrds</code>. The information below will be particularly relevant to users of <code>dht2</code>. We recommend all users of these packages update to the newest versions.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/oldsite/2022-11-16-rupdates.html" class="no-external">
-<div class="listing-date">
-16 Nov 2022
-</div>
-<div class="listing-author">
-Laura Marshall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="software,Distance for Windows" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1713365332222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="755">
-<div class="thumbnail">
-<p><a href="./posts/oldsite/2022-09-07-distwin-release.html" class="no-external"></a></p><a href="./posts/oldsite/2022-09-07-distwin-release.html" class="no-external">
-<!-- img(9CEB782EFEE6)[progressive=true, height=]:posts/oldsite/2022-09-07-distwin-release.html -->
-</a><p><a href="./posts/oldsite/2022-09-07-distwin-release.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/oldsite/2022-09-07-distwin-release.html" class="no-external">Release of Distance 7.5</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/oldsite/2022-09-07-distwin-release.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/oldsite/2022-09-07-distwin-release.html" class="no-external">Release of a new version of Distance for Windows, Distance 7.5. This version upgrades to use 64 bit R and also contains new versions of our R packages which are also now on CRAN.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/oldsite/2022-09-07-distwin-release.html" class="no-external">
-<div class="listing-date">
-07 Sep 2022
-</div>
-<div class="listing-author">
-Laura Marshall
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="software,Distance for Windows" data-listing-date-sort="1654470000000" data-listing-file-modified-sort="1713365306525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="131">
-<div class="thumbnail">
-<p><a href="./posts/oldsite/2022-06-06-distwin-plans.html" class="no-external"></a></p><a href="./posts/oldsite/2022-06-06-distwin-plans.html" class="no-external">
-<!-- img(9CEB782EFEE6)[progressive=true, height=]:posts/oldsite/2022-06-06-distwin-plans.html -->
-</a><p><a href="./posts/oldsite/2022-06-06-distwin-plans.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/oldsite/2022-06-06-distwin-plans.html" class="no-external">Distance for Windows and R 4.2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/oldsite/2022-06-06-distwin-plans.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/oldsite/2022-06-06-distwin-plans.html" class="no-external">Users of Distance for Windows who make use of the analysis engines that call R - that is the MRDS, DSM and MA analysis engines. Distance for Windows currently is not compatible with the latest version of R (4.2); we suggest a workaround and announce that we will be releasing a new version of Distance for Windows in August 2022.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/oldsite/2022-06-06-distwin-plans.html" class="no-external">
-<div class="listing-date">
-06 Jun 2022
-</div>
-<div class="listing-author">
-Len Thomas
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-<nav id="sample-listings-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div>
-<!--
-Photo by <a href="https://unsplash.com/@mattf96?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew Fainman</a> on <a href="https://unsplash.com/photos/a-gazelle-standing-in-a-field-of-tall-grass-MLxEmi1Fk8A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
--->
-
-
-
+</section>
 </section>
 
 </main> <!-- /main -->
