@@ -1,13 +1,36 @@
 ---
 title: R packages
+bibliography: software-bib.bib
+csl: ../apa.csl
 ---
 
-## R packages
-- [Distance](https://cran.r-project.org/web/packages/Distance/index.html) distance sampling analysis
+
+## Distance Sampling Detection Function and Abundance Estimation
+
+> A simple way of fitting detection functions to distance sampling data for both line and point transects. Adjustment term selection, left and right truncation as well as monotonicity constraints and binning are supported. Abundance and density estimates can also be calculated (via a Horvitz-Thompson-like estimator) if survey area information is provided. See @millerjss for more information on methods and <https://examples.distancesampling.org/> for example analyses.
+
+- [Distance](https://cran.r-project.org/web/packages/Distance/index.html) CRAN site
   - [Github repository for `Distance` {{<fa brands github>}}](https://github.com/DistanceDevelopment/Distance)
-- [mrds](https://cran.r-project.org/web/packages/mrds/index.html) detection function modelling engine (used by `Distance`)
+
+## Mark-Recapture Distance Sampling
+
+> Animal abundance estimation via conventional, multiple covariate and mark-recapture distance sampling (CDS/MCDS/MRDS). Detection function fitting is performed via maximum likelihood. Also included are diagnostics and plotting for fitted detection functions. Abundance estimation is via a Horvitz-Thompson-like estimator. Originally described in @laake-borchers
+
+- [mrds](https://cran.r-project.org/web/packages/mrds/index.html) CRAN site
   - [Github repository for `mrds` {{<fa brands github>}}](https://github.com/DistanceDevelopment/mrds)
-- [dssd](https://cran.r-project.org/web/packages/dssd/index.html) survey design engine
+
+
+## Distance Sampling Survey Design
+
+> Creates survey designs for distance sampling surveys. These designs can be assessed for various effort and coverage statistics. Once the user is satisfied with the design characteristics they can generate a set of transects to use in their distance sampling survey. Many of the designs implemented in this R package were first made available in our 'Distance' for Windows software and are detailed in Chapter 7 of Advanced Distance Sampling, @Buckland04. Package cited as @dssd.
+
+- [dssd](https://cran.r-project.org/web/packages/dssd/index.html) CRAN site
   - [Github repository for `dssd` {{<fa brands github>}}](https://github.com/DistanceDevelopment/dssd)
-- [dsims](https://cran.r-project.org/web/packages/dsims/index.html) simulation of distance sampling surveys
+
+
+## Distance Sampling Simulations
+
+> Performs distance sampling simulations. 'dsims' repeatedly generates instances of a user defined population within a given survey region. It then generates realisations of a survey design and simulates the detection process. The data are then analysed so that the results can be compared for accuracy and precision across all replications. This process allows users to optimise survey designs for their specific set of survey conditions. The effects of uncertainty in population distribution or parameters can be investigated under a number of simulations so that users can be confident that they have achieved a robust survey design before deploying vessels into the field. The distance sampling designs used in this package from 'dssd' are detailed in @Buckland04. General distance sampling methods are detailed in @Buckland01. Package cited as @dsims.
+
+- [dsims](https://cran.r-project.org/web/packages/dsims/index.html) CRAN site
   - [Github repository for `dsims` {{<fa brands github>}}](https://github.com/DistanceDevelopment/dsims)

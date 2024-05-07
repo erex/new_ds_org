@@ -1,9 +1,26 @@
 ---
 title: "Distance sampling org 2024"
+listing:
+  id: sample-listings
+  sort-ui: false
+  contents: 
+    - posts
+    - posts/oldsite/.qmd
+  sort: "date desc"
+  type: default
+  page-size: 5
+  date-format: "DD MMM YYYY"
 ---
 
-![Photo by Matthew Fainman on Unsplash](10pct.jpg){width=100%}
+![Photo by Matthew Fainman on Unsplash](10pct.jpg){width="100%"}
 
+## Recent news
 
+::: {#sample-listings}
+:::
 
+```{=html}
+<!--
 Photo by <a href="https://unsplash.com/@mattf96?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew Fainman</a> on <a href="https://unsplash.com/photos/a-gazelle-standing-in-a-field-of-tall-grass-MLxEmi1Fk8A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+-->
+```

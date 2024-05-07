@@ -1,0 +1,24 @@
+---
+title: Design and Simulation R packages
+author: Len Thomas
+date: 2023-01-12
+description: "We would like to make you aware that our design and simulation packages (`dssd` and `dsims`) are temporarily only available from our development repository on github."
+categories: [software, dssd, dsims]
+---
+
+
+We are currently working to get `dssd` and `dsims` back on CRAN (Comprehensive R Archive Network) as soon as possible. In the meantime, please use the following code to install these packages from our development repository on github.
+
+```{r}
+#| eval: false
+install.packages("devtools")
+library(devtools)
+install_github("DistanceDevelopment/dssd", build_vignettes = TRUE)
+install_github("DistanceDevelopment/dsims", build_vignettes = TRUE)
+```
+
+For those interested in the nitty gritty, here are more details.
+
+Please be reassured that both `dssd` and `dsims` continued to pass all CRAN checks on both current R, old R and development R for all standard setups for windows, mac, M1 mac and the various linux platforms.
+
+CRAN also runs checks on more unusual setups and has detected that `dssd` may generate some shape related errors if you are using alternative BLAS/LAPACK implementations for more efficient linear algebra calculations. The machine they tested was using R-devel in an x86_64 Fedora 34 Linux environment. Please [email us](mailto:distance@st-andrews.ac.uk) if you have come across this issue as we are currently trying to replicate the error.

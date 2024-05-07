@@ -1,0 +1,11 @@
+---
+title: Distance for Windows and R 4.2
+author: Len Thomas
+date: 2022-06-06
+description: "Users of Distance for Windows who make use of the analysis engines that call R - that is the MRDS, DSM and MA analysis engines.  Distance for Windows currently is not compatible with the latest version of R (4.2); we suggest a workaround and announce that we will be releasing a new version of Distance for Windows in August 2022."
+categories: [software, Distance for Windows]
+---
+
+In the most recent release of R, that is version 4.2, the R for Windows build has stopped supporting 32-bit R.  This is the version called by Distance for Windows.  Hence, at present Distance for Windows is not compatible with the latest version of R.  We therefore suggest users do not upgrade beyond R 4.1.2, which is the version supported by our current release of Distance for Windows (version 7.4 Release 2).  If users do wish to upgrade their version of R, they should retain version 4.1.2 on their computer so that Distance for Windows can still call it to run the analysis engines.
+
+We are planning a new release of Distance for Windows towards the end of August (version 7.5 Release 1) that will fix this issue.

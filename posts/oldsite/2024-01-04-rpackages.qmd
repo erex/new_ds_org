@@ -1,0 +1,41 @@
+---
+title: New CRAN release of mrds and Distance packages
+author: Laura Marshall
+date: 2024-01-04
+description: "Release of `mrds 2.3.0` and `Distance 1.0.9` on CRAN. An important update is that the default encounter rate variance estimator for point transect surveys has now been changed from the 'P3' estimator to the 'P2' estimator."
+categories: [software, Distance, mrds]
+---
+
+This change will only make a difference to the variance estimate when there is variable survey effort (e.g. variable numbers of visits) between points, which is uncommon in practice. In the case that points are visited the same number of times these two estimators ('P2' and 'P3') are equivalent and there will be no difference in the variance estimates. 
+
+This change to the default encounter rate estimator was made for consistency with the line transect estimator, where the equivalent 'R2' estimator is the default, and also with Distance for Windows where 'R2' and 'P2' are the defaults for line and point transect surveys, respectively. 'R2' and 'P2' are both design-based variance estimators, while 'R3' and 'P3' are model-derived; the design-based line transect estimator was found to be superior when model assumptions fail (see Fewster et. al. 2009, for details).
+
+These releases also address a number of reported issues within the packages. A full list of changes and updates is given below.
+
+Thanks to those who have made feature requests or reported issues. If you do find any problems, or want to suggest a new feature, please feel free to raise an issue at <https://github.com/DistanceDevelopment/distance-bugs/issues> or in the github page for each package
+
+- <https://github.com/DistanceDevelopment/Distance/issues>
+- <https://github.com/DistanceDevelopment/mrds/issues>
+
+## Full list of changes and updates:
+
+### `mrds`
+
+Changes in version 2.3.0 (submitted to on CRAN 18/12/2023)
+
+-   The 'P2' estimator is now the default for estimating the encouter rate variance for point transect surveys. (Issue #65) <https://github.com/DistanceDevelopment/mrds/issues/65>
+-   Re-formatted the format section of the documentation for the book.tee.data (Issue #91) <https://github.com/DistanceDevelopment/mrds/issues/91>
+-   Ensure that the MCDS optimizer is not used for double observer models as this was generating errors. (Issue #89) <https://github.com/DistanceDevelopment/mrds/issues/89>
+-   Improved the documentation on initial values, lower and upper bounds in both the ddf and mrds_opt documentation (mrds_opt was renamed from mrds-opt which was not accessible via ?mrds-opt). (Issue #90) <https://github.com/DistanceDevelopment/mrds/issues/90>
+
+
+### `Distance`
+
+Changes in version 1.0.9 (accepted to CRAN 21/12/2023)
+
+-   Changed the default encounter rate estimator for point transect surveys from P3 to P2. (Issue #138) <https://github.com/DistanceDevelopment/Distance/issues/138>
+-   Fixed bug which produced NA's when stratum names came after 'Total' in the alphabet. (Issue #158) <https://github.com/DistanceDevelopment/Distance/issues/158>
+-   Added additional documentation explaining the adjustment term options when covariates are in the model. (Issue #156) <https://github.com/DistanceDevelopment/Distance/issues/156>
+-   Fixed dht bootstrap to work when distbegin and distend are supplied but not distance. (Issue #147) <https://github.com/DistanceDevelopment/Distance/issues/147>
+-   Added a warning for the dht bootstrap when Sample.Label values are not unique across all strata. (Issue #157) <https://github.com/DistanceDevelopment/Distance/issues/157>
+-   Distance 1.0.9 depends on mrds >= 2.3.0 due to re-named documentation page links.

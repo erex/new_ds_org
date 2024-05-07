@@ -24,7 +24,7 @@ A book discussing practical considerations, along with developments in the decad
 
 An introductory article is available here:
 
-- [Marques, T.A., S.T. Buckland, D.L. Borchers, E. Rexstad and L. Thomas](downloads/dist_encyc_statsci.pdf). 2011. Distance sampling. Pp 398-400 in Lovric, M. (Ed.), International Encyclopedia of Statistical Science, Springer-Verlag, Berlin. DOI: [10.1007/978-3-642-04898-2_214](https://doi.org/10.1007/978-3-642-04898-2_214)
+- Marques, T.A., S.T. Buckland, D.L. Borchers, E. Rexstad and L. Thomas. 2011. Distance sampling. Pp 398-400 in Lovric, M. (Ed.), International Encyclopedia of Statistical Science, Springer-Verlag, Berlin. DOI: [10.1007/978-3-642-04898-2_214](https://doi.org/10.1007/978-3-642-04898-2_214)
 
 Additionally, the Open Access paper:
 

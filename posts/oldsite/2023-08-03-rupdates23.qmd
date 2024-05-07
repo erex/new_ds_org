@@ -1,0 +1,42 @@
+---
+title: New versions of Distance and mrds packages
+author: Len Thomas
+date: 2023-08-03
+description: "We are pleased to announce the release of new versions of our R packages `Distance` and `mrds`.   The new release adds the ability to fit detection functions (CDS and MCDS) using the same optimizer used by Distance for Windows."
+categories: [software, Distance, mrds]
+
+---
+
+This requires downloading a compiled file MCDS.exe into an R library directory, and is currently only supported under Windows operating systems.  This new feature may be of use for those encountering difficulties fitting detection functions (e.g., convergence problems) and also those with inherently "difficult" distance sampling data - e.g., data with a spike in the detection function close to zero or overdispersion (many non-independent detections, such as is common in camera trap distance sampling).  There are also circumstances with the MCDS.exe optimizer is faster than the R-based one, which may be of particular help when using a nonparametric bootstrap for variance estimation.  A vignette giving examples and more information is available on our [DistanceExamples web page](https://examples.distancesampling.org/) (the vignette is entitled "Alternative optimization engine for fitting detection functions" and a direct link to the html file is [here](https://examples.distancesampling.org/mcds-dot-exe/mcds-dot-exe.html) ).  If you encounter any difficulties in using this new enhancement, please let us know.
+
+Please note that this new feature is not currently available under non-Windows operating systems (e.g., Mac or Linux) and we also do not recommend using it if you analyze double-platform data using the `mrds` package.
+
+## A full list of changes and updates is given below.
+
+Thanks to those who have made feature requests or reported issues. If you do find any problems, or want to suggest a new feature, please feel free to raise an issue at <https://github.com/DistanceDevelopment/distance-bugs/issues> or in the github page for each package
+
+- <https://github.com/DistanceDevelopment/Distance/issues>
+- <https://github.com/DistanceDevelopment/mrds/issues>
+
+## Full list of changes and updates:
+
+### `Distance`
+
+Changes in version 1.0.8
+
+- Support for using MCDS.exe from Distance for Windows to run analyses. You can now download MCDS.exe using mrds::download_MCDS_dot_exe run analyses using this engine, rather (or in tandem with) the usual R optimizers provided in mrds. ds will pick the best (by likelihood) and return that. See ?ds and ?"mcds-dot-exe" for more details.
+
+### `mrds`
+
+Changes in version 2.2.9
+
+#### New Features
+
+- Users can now download the fortran MCDS.exe optimiser used in Distance for Windows and fit single observer models with both the optimisers in R via mrds and also MCDS.exe. For some datasets the optimisation with MCDS.exe is superior (giving a better likelihood) than the optimiser in R used with mrds. See ?MCDS for more details.
+
+#### Bug Fixes
+
+- fix bug where the (true, 2nd derivative) hessian was not calculated during optimisation. This then lead to weird errors later (summary doesn't work etc). Hessians are now calculated in this case. Thanks to Anne Provencher St-Pierre for reporting the issue
+- Fix prediction bug (Issue #84) where predicting for hazard rate model with covariates and se.fit= TRUE. Note there may be issues when predicting in this instance for binned data - check results are as expected.
+- Fix bug when a uniform model was fitted with no adjustments. This caused an error when looking for the hessian. It also required that the covariance set to 0 when estimating the cluster size standard errors (Issue #79).
+- fix bug with using binned data via cutpoints for prediction (#73)

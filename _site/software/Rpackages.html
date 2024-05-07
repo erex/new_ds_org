@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,6 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../images/logo.gif" rel="icon" type="image/gif">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -158,6 +179,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../posts.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -242,7 +267,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#r-packages" id="toc-r-packages" class="nav-link active" data-scroll-target="#r-packages">R packages</a></li>
+  <li><a href="#distance-sampling-detection-function-and-abundance-estimation" id="toc-distance-sampling-detection-function-and-abundance-estimation" class="nav-link active" data-scroll-target="#distance-sampling-detection-function-and-abundance-estimation">Distance Sampling Detection Function and Abundance Estimation</a></li>
+  <li><a href="#mark-recapture-distance-sampling" id="toc-mark-recapture-distance-sampling" class="nav-link" data-scroll-target="#mark-recapture-distance-sampling">Mark-Recapture Distance Sampling</a></li>
+  <li><a href="#distance-sampling-survey-design" id="toc-distance-sampling-survey-design" class="nav-link" data-scroll-target="#distance-sampling-survey-design">Distance Sampling Survey Design</a></li>
+  <li><a href="#distance-sampling-simulations" id="toc-distance-sampling-simulations" class="nav-link" data-scroll-target="#distance-sampling-simulations">Distance Sampling Simulations</a></li>
   </ul>
 </nav>
     </div>
@@ -268,31 +296,78 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="r-packages">R packages</h2>
+<section id="distance-sampling-detection-function-and-abundance-estimation" class="level2">
+<h2 class="anchored" data-anchor-id="distance-sampling-detection-function-and-abundance-estimation">Distance Sampling Detection Function and Abundance Estimation</h2>
+<blockquote class="blockquote">
+<p>A simple way of fitting detection functions to distance sampling data for both line and point transects. Adjustment term selection, left and right truncation as well as monotonicity constraints and binning are supported. Abundance and density estimates can also be calculated (via a Horvitz-Thompson-like estimator) if survey area information is provided. See <span class="citation" data-cites="millerjss">Miller et al. (<a href="#ref-millerjss" role="doc-biblioref">2019</a>)</span> for more information on methods and <a href="https://examples.distancesampling.org/" class="uri">https://examples.distancesampling.org/</a> for example analyses.</p>
+</blockquote>
 <ul>
-<li><a href="https://cran.r-project.org/web/packages/Distance/index.html">Distance</a> distance sampling analysis
+<li><a href="https://cran.r-project.org/web/packages/Distance/index.html">Distance</a> CRAN site
 <ul>
 <li><a href="https://github.com/DistanceDevelopment/Distance">Github repository for <code>Distance</code> <i class="fa-brands fa-github" aria-label="github"></i></a></li>
 </ul></li>
-<li><a href="https://cran.r-project.org/web/packages/mrds/index.html">mrds</a> detection function modelling engine (used by <code>Distance</code>)
+</ul>
+</section>
+<section id="mark-recapture-distance-sampling" class="level2">
+<h2 class="anchored" data-anchor-id="mark-recapture-distance-sampling">Mark-Recapture Distance Sampling</h2>
+<blockquote class="blockquote">
+<p>Animal abundance estimation via conventional, multiple covariate and mark-recapture distance sampling (CDS/MCDS/MRDS). Detection function fitting is performed via maximum likelihood. Also included are diagnostics and plotting for fitted detection functions. Abundance estimation is via a Horvitz-Thompson-like estimator. Originally described in <span class="citation" data-cites="laake-borchers">Laake &amp; Borchers (<a href="#ref-laake-borchers" role="doc-biblioref">2004</a>)</span></p>
+</blockquote>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/mrds/index.html">mrds</a> CRAN site
 <ul>
 <li><a href="https://github.com/DistanceDevelopment/mrds">Github repository for <code>mrds</code> <i class="fa-brands fa-github" aria-label="github"></i></a></li>
 </ul></li>
-<li><a href="https://cran.r-project.org/web/packages/dssd/index.html">dssd</a> survey design engine
+</ul>
+</section>
+<section id="distance-sampling-survey-design" class="level2">
+<h2 class="anchored" data-anchor-id="distance-sampling-survey-design">Distance Sampling Survey Design</h2>
+<blockquote class="blockquote">
+<p>Creates survey designs for distance sampling surveys. These designs can be assessed for various effort and coverage statistics. Once the user is satisfied with the design characteristics they can generate a set of transects to use in their distance sampling survey. Many of the designs implemented in this R package were first made available in our ‘Distance’ for Windows software and are detailed in Chapter 7 of Advanced Distance Sampling, <span class="citation" data-cites="Buckland04">Buckland et al. (<a href="#ref-Buckland04" role="doc-biblioref">2004</a>)</span>. Package cited as <span class="citation" data-cites="dssd">Marshall (<a href="#ref-dssd" role="doc-biblioref">2023b</a>)</span>.</p>
+</blockquote>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/dssd/index.html">dssd</a> CRAN site
 <ul>
 <li><a href="https://github.com/DistanceDevelopment/dssd">Github repository for <code>dssd</code> <i class="fa-brands fa-github" aria-label="github"></i></a></li>
 </ul></li>
-<li><a href="https://cran.r-project.org/web/packages/dsims/index.html">dsims</a> simulation of distance sampling surveys
+</ul>
+</section>
+<section id="distance-sampling-simulations" class="level2">
+<h2 class="anchored" data-anchor-id="distance-sampling-simulations">Distance Sampling Simulations</h2>
+<blockquote class="blockquote">
+<p>Performs distance sampling simulations. ‘dsims’ repeatedly generates instances of a user defined population within a given survey region. It then generates realisations of a survey design and simulates the detection process. The data are then analysed so that the results can be compared for accuracy and precision across all replications. This process allows users to optimise survey designs for their specific set of survey conditions. The effects of uncertainty in population distribution or parameters can be investigated under a number of simulations so that users can be confident that they have achieved a robust survey design before deploying vessels into the field. The distance sampling designs used in this package from ‘dssd’ are detailed in <span class="citation" data-cites="Buckland04">Buckland et al. (<a href="#ref-Buckland04" role="doc-biblioref">2004</a>)</span>. General distance sampling methods are detailed in <span class="citation" data-cites="Buckland01">Buckland et al. (<a href="#ref-Buckland01" role="doc-biblioref">2001</a>)</span>. Package cited as <span class="citation" data-cites="dsims">Marshall (<a href="#ref-dsims" role="doc-biblioref">2023a</a>)</span>.</p>
+</blockquote>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/dsims/index.html">dsims</a> CRAN site
 <ul>
 <li><a href="https://github.com/DistanceDevelopment/dsims">Github repository for <code>dsims</code> <i class="fa-brands fa-github" aria-label="github"></i></a></li>
 </ul></li>
 </ul>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Buckland01" class="csl-entry" role="listitem">
+Buckland, S. T., Anderson, D. R., Burnham, K. P., Laake, J. L., Borchers, D. L., &amp; Thomas, L. (2001). <em>Introduction to distance sampling: Estimating abundance of biological populations</em>. Oxford University Press.
+</div>
+<div id="ref-Buckland04" class="csl-entry" role="listitem">
+Buckland, S. T., Anderson, D. R., Burnham, K. P., Laake, J. L., Borchers, D. L., &amp; Thomas, L. (2004). <em>Advanced distance sampling</em>. Oxford University Press.
+</div>
+<div id="ref-laake-borchers" class="csl-entry" role="listitem">
+Laake, J. L., &amp; Borchers, D. L. (2004). Methods for incomplete detection at distance zero. In <em>Advanced distance sampling</em> (pp. 108–189). Oxford University Press.
+</div>
+<div id="ref-dsims" class="csl-entry" role="listitem">
+Marshall, L. (2023a). <em>Dsims: Distance sampling simulations</em>. Retrieved from <a href="https://CRAN.R-project.org/package=dsims">https://CRAN.R-project.org/package=dsims</a>
+</div>
+<div id="ref-dssd" class="csl-entry" role="listitem">
+Marshall, L. (2023b). <em>Dssd: Distance sampling survey design</em>. Retrieved from <a href="https://CRAN.R-project.org/package=dssd">https://CRAN.R-project.org/package=dssd</a>
+</div>
+<div id="ref-millerjss" class="csl-entry" role="listitem">
+Miller, D. L., Rexstad, E., Thomas, L., Marshall, L., &amp; Laake, J. L. (2019). Distance sampling in <span>R</span>. <em>Journal of Statistical Software</em>, <em>89</em>(1), 1–28. <a href="https://doi.org/10.18637/jss.v089.i01">https://doi.org/10.18637/jss.v089.i01</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

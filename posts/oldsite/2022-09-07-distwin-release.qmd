@@ -1,0 +1,71 @@
+---
+title: Release of Distance 7.5
+author: Laura Marshall
+date: 2022-09-07
+description: "Release of a new version of Distance for Windows, Distance 7.5. This version upgrades to use 64 bit R and also contains new versions of our R packages which are also now on CRAN."
+categories: [software, Distance for Windows]
+---
+
+Enhancements include:
+
+- linking to 64 bit R which makes Distance compatible with versions 4.2.0 and up, we advise updating R to version 4.2.1
+- switching from using DSsim to dsims, a more robust and efficient simulation package.
+- including R package versions mrds 2.2.7, Distance 1.0.6, dsm 2.3.3, dsims 1.0.1 and dssd 0.3.4
+- there is a new sample project using the MRDS engine for removal method distance sampling
+- the engines that use R are now compatible with the latest versions of the mrds and dsm packages (which have had small syntax changes, see below)
+- We have deprecated the moving block bootstrap for variance estimation in the DSM engine and will remove it in future releases.(See help page "Variance Estimation via Moving Block Bootstrap" for more on this.)
+
+Now that the simulation engine has been switched to use the dsims package (the DSsim package has now been retired), please report any issues you encounter with this transition. Also note that the ability to run global simulations with stratified designs is not currently available, we will make this option available again in a second release of Distance 7.5 in the next few months.
+
+R packages:
+
+-   mrds 2.2.7 and Distance 1.0.6
+    -   starting values for the likelihood maximization have been
+        changed from using random values to fixed ones when using
+        monotonicity constraints, so as to guarantee getting the same
+        result with every run. The previous behaviour can be brought
+        back if required (set control\$mono.random.start = TRUE).
+        Starting values can also be set manually if required. Please let
+        us know if this change causes any issues for you!
+    -   warning and error messages from the likelihood maximization
+        routine solnp/gosolnp are now not displayed by default, as users
+        found them difficult to interpret -- they can be seen by setting
+        showit\>0
+    -   improvements to robustness of the maximum likelihood routine
+        have been made by scaling covariates differently from previously
+    -   Fix to reporting of encouter rate and its variance in stratified
+        analyses.
+    -   Distance package - fix for detection function variance
+        estimation.
+    -   other minor fixes see package NEWS
+-   dsm 2.3.3
+    -   to improve consistency of function calls within this package,
+        some functions and function arguments have changed from having a
+        . to separate words to having an \_. Full list as follows:
+    -   dsm.var.prop -\> dsm_var_prop
+    -   dsm.var.gam -\> dsm_var_gam
+    -   dsm.var.movblk -\> dsm_var_movblk
+    -   dsm.cor -\> dsm_cor
+    -   rqgam.check -\> rqgam_check
+    -   vis.concurvity -\> vis_concurvity
+    -   dsm_varprop
+        -   var_type -\> var.type
+-   dsims 1.0.1
+    -   dims 1.0.1 has various updates for compatibility with Distance
+        for Windows and a partial fix for using grouped strata for
+        abundance / density estimation (see NEWS
+        <https://github.com/DistanceDevelopment/dsims/blob/master/NEWS>
+        for further details)
+-   DSSim
+    -   Our previous simulation package DSSim has been removed from CRAN
+        as we now recommend all users use dsims
+    -   It is available on github if needed, at
+        <https://github.com/DistanceDevelopment/DSsim>
+-   dssd 0.3.4
+    -   updates for compatibility with Distance for Windows (see NEWS
+        <https://github.com/DistanceDevelopment/dssd/blob/master/NEWS>
+        for further details)
+
+## Download Distance 7.5
+
+Follow this link for more information on downloading [Distance 7.5](http://distancesampling.org/Distance/distance75download.html)

@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,6 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../images/logo.gif" rel="icon" type="image/gif">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -131,6 +152,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../resources/distancelist.html">
  <span class="dropdown-text">E-mail list</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../resources/dbib.html">
+ <span class="dropdown-text"></span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -153,8 +178,8 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">Images and hero</span></a>
+    <a class="nav-link" href="../posts.html"> 
+<span class="menu-text">News</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -240,10 +265,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#visual-interface-to-activity-package" id="toc-visual-interface-to-activity-package" class="nav-link active" data-scroll-target="#visual-interface-to-activity-package">Visual interface to activity package</a>
-  <ul class="collapse">
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
+  <li><a href="#visual-interface-to-activity-package" id="toc-visual-interface-to-activity-package" class="nav-link active" data-scroll-target="#visual-interface-to-activity-package">Visual interface to activity package</a></li>
   </ul>
 </nav>
     </div>
@@ -271,23 +293,27 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="visual-interface-to-activity-package" class="level1">
 <h1>Visual interface to activity package</h1>
-<p>Camera trap distance sampling (CTDS) is a relatively new application of distance sampling, using data from remotely-operated camera or video recorders. The methods are described by Howe et al.&nbsp;(2017). One important component of the analysis of camera trap distance sampling (CTDS) data is determining the proportion of animals that are active during the diurnal sampling window during which detections are counted. A tool to help with this is the <code>activity</code> package (Rowcliffe et al.&nbsp;2014, Rowcliffe 2021) in the <code>R</code> software.</p>
+<p>Camera trap distance sampling (CTDS) is a relatively new application of distance sampling, using data from remotely-operated camera or video recorders. The methods are described by <span class="citation" data-cites="howe2018">Howe et al. (<a href="#ref-howe2018" role="doc-biblioref">2018</a>)</span>. One important component of the analysis of camera trap distance sampling (CTDS) data is determining the proportion of animals that are active during the diurnal sampling window during which detections are counted. A tool to help with this is the <code>activity</code> package (<span class="citation" data-cites="rowcliffe2014">Rowcliffe et al. (<a href="#ref-rowcliffe2014" role="doc-biblioref">2014</a>)</span>, <span class="citation" data-cites="activity-package">Rowcliffe (<a href="#ref-activity-package" role="doc-biblioref">2023</a>)</span> in the <code>R</code> software.</p>
 <p>We have created a simple interface that allows web-based access to the core functionality of the <code>activity</code> package without the need to install R. Users can upload detection times from a text file, fit a probability density to the times, input the proportion of the day represented, and obtain activity values together with bootstrap estimates of uncertainty. Users can download the bootstrap results file. The activity value and bootstrap results file can then be imported into Distance for Windows for use in analysis of CTDS data.</p>
 <p>The visual interface is built using the <code>shiny</code> package in R. It is made available here as a free service to distance sampling users. Please let us know if you have problems accessing it, or have suggestions for improvement.</p>
+<p><img src="fitact.png" class="img-fluid"></p>
 <p><a href="https://lenthomas.shinyapps.io/Activity/">Click here to access the web-based interface to the activity package.</a></p>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<ul>
-<li>Howe, E.J., S.T. Buckland, M.-L. Despres-Einspenner and H.S. Kuhl. 2017. Distance sampling with camera traps. Methods in Ecology and Evolution 8: 1558-1565. https://doi.org/10.1111/2041-210X.12790</li>
-<li>Rowcliffe, M., R. Kays, B. Kranstauber, C.Carbone and P.A. Jansen. 2014. Quantifying levels of animal activity using camera trap data. Methods in Ecology and Evolution 5: 1170-1179. https://doi.org/10.1111/2041-210X.12278</li>
-<li>Rowcliffe, M. 2021. activity: Animal Activity statistics. https://CRAN.R-project.org/package=activity</li>
-</ul>
+
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-howe2018" class="csl-entry" role="listitem">
+Howe, E. J., Buckland, S. T., Després-Einspenner, M.-L., &amp; Kühl, H. S. (2018). Distance sampling with camera traps. <em>Methods in Ecology and Evolution</em>, <em>8</em>, 1558–1565. <a href="https://doi.org/10.1111/2041-210X.12790@10.1111/(ISSN)2041-210x.PracticalToolsFieldMethodsMEE32018">https://doi.org/10.1111/2041-210X.12790@10.1111/(ISSN)2041-210x.PracticalToolsFieldMethodsMEE32018</a>
+</div>
+<div id="ref-activity-package" class="csl-entry" role="listitem">
+Rowcliffe, M. (2023). <em>Activity: Animal activity statistics</em>. Retrieved from <a href="https://CRAN.R-project.org/package=activity">https://CRAN.R-project.org/package=activity</a>
+</div>
+<div id="ref-rowcliffe2014" class="csl-entry" role="listitem">
+Rowcliffe, M., Kays, R., Kranstauber, B., Carbone, C., &amp; Jansen, P. A. (2014). Quantifying levels of animal activity using camera trap data. <em>Methods in Ecology and Evolution</em>, <em>5</em>(11), 1170–1179. <a href="https://doi.org/10.1111/2041-210X.12278">https://doi.org/10.1111/2041-210X.12278</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -682,7 +708,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p><strong>Distance for Windows citation:</strong> <br> Thomas, L., S.T. Buckland, E.A. Rexstad, J.L. Laake, S. Strindberg, <br> S.L. Hedley, J.R.B. Bishop, T.A. Marques, and K.P. Burnham. 2010. <br> Distance software: design and analysis of distance sampling surveys for <br> estimating population size. Journal of Applied Ecology 47: 5-14. <br> DOI: <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2009.01737.x">10.1111/j.1365-2664.2009.01737.x</a></p>
 </div>   
     <div class="nav-footer-center">
-<p><a href="mailto:distance@st-andrews.ac.uk"><strong>Contact us via email</strong></a></p>
+<p><strong>Contact us via email</strong> <br><a href="mailto:distance@st-andrews.ac.uk">distance@st-andrews.ac.uk</a></p>
 </div>
     <div class="nav-footer-right">
 <p><strong>Distance R package citation:</strong> <br> Miller, D.L., Rexstad, E., Thomas, L., Marshall, L., <br> and Laake, J.L. (2019). Distance Sampling in R. <br> Journal of Statistical Software, 89(1), 1–28. <br> DOI: <a href="https://doi.org/10.18637/jss.v089.i01">10.18637/jss.v089.i01</a> <br></p>

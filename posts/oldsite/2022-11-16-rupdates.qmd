@@ -1,0 +1,50 @@
+---
+title: New versions of R packages
+author: Laura Marshall
+date: 2022-11-16
+description: "Imminent release of new versions of our R packages `Distance` and `mrds`. The information below will be particularly relevant to users of `dht2`. We recommend all users of these packages update to the newest versions."
+categories: [software, Distance, mrds]
+---
+
+
+A full list of changes and updates:
+
+One important change is that the dht2 function in Distance now requires that the data contains an object column. If your data is missing this column it can easily be added as follows:
+
+```{r}
+#| eval: false
+distance_data$object <- NA
+distance_data$object[!is.na(distance_data$distance)] <- 1:sum(!is.na(distance_data$distance))
+```
+
+This minor changes also affects some of our code example vignettes, available at <https://examples.distancesampling.org/> We believe all the affected examples have now been updated.
+
+Thanks to those who have made feature requests or reported issues. If you do find any problems, or want to suggest a new feature, please feel free to raise an issue at <https://github.com/DistanceDevelopment/distance-bugs/issues> or in the github page for each package
+
+<https://github.com/DistanceDevelopment/Distance/issues>
+
+<https://github.com/DistanceDevelopment/mrds/issues>
+
+## Full list of changes and updates:
+
+### `Distance`
+
+Changes in version 1.0.7 (accepted to CRAN 16/11/2022)
+
+-   dht2 now requires the object field in flatfile formatted data. The following vignette shows how to add an object field if your data does not have already have one: <https://examples.distancesampling.org/Distance-cameratraps/camera-distill.html> (#139) <https://github.com/DistanceDevelopment/Distance/issues/139>
+-   Fix bugs when a uniform is fitted with no adjustments (#129 / #130) <https://github.com/DistanceDevelopment/Distance/issues/129> <https://github.com/DistanceDevelopment/Distance/issues/130>
+-   Fixed error in dht2 when binned data used distend / distbegin (#142) <https://github.com/DistanceDevelopment/Distance/issues/142>
+
+### `mrds`
+
+Changes in version 2.2.8 (submitted to on CRAN 16/11/2022)
+
+-   Fix bug where plotting rem.fi models when truncation was used would lead to an error being thrown. (#58) <https://github.com/DistanceDevelopment/mrds/issues/58>
+-   Fix bugs when a uniform is fitted with no adjustments (#59) <https://github.com/DistanceDevelopment/mrds/issues/59>
+-   Fix bug in plotting when left truncation was used and points didn't match detection function line (Distance #134) <https://github.com/DistanceDevelopment/Distance/issues/134>
+-   Fix bug in debug reporting when uniform only models are used (Distance #136) <https://github.com/DistanceDevelopment/Distance/issues/136>
+-   Fix bug in adjustment term fitting where width scaling was defined as right minus left truncation, rather than just the right truncation value (Distance #133) <https://github.com/DistanceDevelopment/Distance/issues/133>
+-   Use (0,width) as the interval for monotonicity checks, rather than (left, width) as this was causing issues and is not consistent with Distance for Windows (Distance #135) <https://github.com/DistanceDevelopment/Distance/issues/135>
+-   Expose mono.outer.iter option to control number of outer iterations used to fit a monotonic model. Default 200.
+-   Make dht output tables consistent. Now always refers to Region in the display (rather than Region in summary and Label in N/D tables). Note this is only a display change so won't break code which looks to extract these values based on column names from the dht object which is unchanged.(#5) <https://github.com/DistanceDevelopment/mrds/issues/5>
+-   Fixed bug leading to erroneous zero totals in individuals N/D tables when there were no sightings in one or more strata. Bug was apparent when the data were sightings of clusters and the varflag 1 option (er_method = 1 in Distance ds function) was selected in the dht function.(#61) <https://github.com/DistanceDevelopment/mrds/issues/61>

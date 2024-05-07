@@ -1,0 +1,28 @@
+[
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2024-04-18-second-post/index.html",
+      "/posts/2024-04-17-first-post/index.html",
+      "/posts/oldsite/2024-01-04-rpackages.html",
+      "/posts/oldsite/2023-08-03-rupdates23.html",
+      "/posts/oldsite/2023-01-12-dssd-dsims.html",
+      "/posts/oldsite/2022-11-16-rupdates.html",
+      "/posts/oldsite/2022-09-07-distwin-release.html",
+      "/posts/oldsite/2022-06-06-distwin-plans.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/2024-04-18-second-post/index.html",
+      "/posts/2024-04-17-first-post/index.html",
+      "/posts/oldsite/2024-01-04-rpackages.html",
+      "/posts/oldsite/2023-08-03-rupdates23.html",
+      "/posts/oldsite/2023-01-12-dssd-dsims.html",
+      "/posts/oldsite/2022-11-16-rupdates.html",
+      "/posts/oldsite/2022-09-07-distwin-release.html",
+      "/posts/oldsite/2022-06-06-distwin-plans.html"
+    ]
+  }
+]

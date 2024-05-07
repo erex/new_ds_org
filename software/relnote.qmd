@@ -2,7 +2,7 @@
 title: Distance for Windows release notes
 ---
 
-Distance 7.5 Release 2]
+Distance 7.5 Release 2
 
 > Release Notes - February 2023
 

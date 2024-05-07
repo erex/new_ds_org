@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Distance sampling org 2024",
     "section": "",
-    "text": "Photo by Matthew Fainman on Unsplash\n\n\nPhoto by Matthew Fainman on Unsplash"
+    "text": "Photo by Matthew Fainman on Unsplash"
   },
   {
     "objectID": "about.html",
@@ -105,7 +105,7 @@
     "href": "software/activity.html",
     "title": "Activity for CTDS",
     "section": "",
-    "text": "Camera trap distance sampling (CTDS) is a relatively new application of distance sampling, using data from remotely-operated camera or video recorders. The methods are described by Howe et al. (2017). One important component of the analysis of camera trap distance sampling (CTDS) data is determining the proportion of animals that are active during the diurnal sampling window during which detections are counted. A tool to help with this is the activity package (Rowcliffe et al. 2014, Rowcliffe 2021) in the R software.\nWe have created a simple interface that allows web-based access to the core functionality of the activity package without the need to install R. Users can upload detection times from a text file, fit a probability density to the times, input the proportion of the day represented, and obtain activity values together with bootstrap estimates of uncertainty. Users can download the bootstrap results file. The activity value and bootstrap results file can then be imported into Distance for Windows for use in analysis of CTDS data.\nThe visual interface is built using the shiny package in R. It is made available here as a free service to distance sampling users. Please let us know if you have problems accessing it, or have suggestions for improvement.\nClick here to access the web-based interface to the activity package.\n\n\n\nHowe, E.J., S.T. Buckland, M.-L. Despres-Einspenner and H.S. Kuhl. 2017. Distance sampling with camera traps. Methods in Ecology and Evolution 8: 1558-1565. https://doi.org/10.1111/2041-210X.12790\nRowcliffe, M., R. Kays, B. Kranstauber, C.Carbone and P.A. Jansen. 2014. Quantifying levels of animal activity using camera trap data. Methods in Ecology and Evolution 5: 1170-1179. https://doi.org/10.1111/2041-210X.12278\nRowcliffe, M. 2021. activity: Animal Activity statistics. https://CRAN.R-project.org/package=activity",
+    "text": "Visual interface to activity package\nCamera trap distance sampling (CTDS) is a relatively new application of distance sampling, using data from remotely-operated camera or video recorders. The methods are described by Howe et al. (2018). One important component of the analysis of camera trap distance sampling (CTDS) data is determining the proportion of animals that are active during the diurnal sampling window during which detections are counted. A tool to help with this is the activity package (Rowcliffe et al. (2014), Rowcliffe (2023) in the R software.\nWe have created a simple interface that allows web-based access to the core functionality of the activity package without the need to install R. Users can upload detection times from a text file, fit a probability density to the times, input the proportion of the day represented, and obtain activity values together with bootstrap estimates of uncertainty. Users can download the bootstrap results file. The activity value and bootstrap results file can then be imported into Distance for Windows for use in analysis of CTDS data.\nThe visual interface is built using the shiny package in R. It is made available here as a free service to distance sampling users. Please let us know if you have problems accessing it, or have suggestions for improvement.\n\nClick here to access the web-based interface to the activity package.\n\n\n\n\n\nReferences\n\nHowe, E. J., Buckland, S. T., Després-Einspenner, M.-L., & Kühl, H. S. (2018). Distance sampling with camera traps. Methods in Ecology and Evolution, 8, 1558–1565. https://doi.org/10.1111/2041-210X.12790@10.1111/(ISSN)2041-210x.PracticalToolsFieldMethodsMEE32018\n\n\nRowcliffe, M. (2023). Activity: Animal activity statistics. Retrieved from https://CRAN.R-project.org/package=activity\n\n\nRowcliffe, M., Kays, R., Kranstauber, B., Carbone, C., & Jansen, P. A. (2014). Quantifying levels of animal activity using camera trap data. Methods in Ecology and Evolution, 5(11), 1170–1179. https://doi.org/10.1111/2041-210X.12278",
     "crumbs": [
       "Activity for CTDS"
     ]
@@ -165,7 +165,7 @@
     "href": "software/relnote.html",
     "title": "Distance for Windows release notes",
     "section": "",
-    "text": "Distance 7.5 Release 2]\nContents"
+    "text": "Distance 7.5 Release 2\nContents"
   },
   {
     "objectID": "software/relnote.html#system-requirements-for-distance-7.5",
@@ -179,7 +179,7 @@
     "href": "software/Rpackages.html",
     "title": "R packages",
     "section": "",
-    "text": "Distance distance sampling analysis\n\nGithub repository for Distance \n\nmrds detection function modelling engine (used by Distance)\n\nGithub repository for mrds \n\ndssd survey design engine\n\nGithub repository for dssd \n\ndsims simulation of distance sampling surveys\n\nGithub repository for dsims",
+    "text": "A simple way of fitting detection functions to distance sampling data for both line and point transects. Adjustment term selection, left and right truncation as well as monotonicity constraints and binning are supported. Abundance and density estimates can also be calculated (via a Horvitz-Thompson-like estimator) if survey area information is provided. See Miller et al. (2019) for more information on methods and https://examples.distancesampling.org/ for example analyses.\n\n\nDistance CRAN site\n\nGithub repository for Distance",
     "crumbs": [
       "R packages"
     ]
@@ -312,6 +312,214 @@
     "text": "What is distance sampling?\n\n\n\nDistance sampling is a widely used methodology for estimating animal density or abundance. Its name derives from the fact that the information used for inference are the recorded distances to objects of interest (usually animals) obtained by surveying lines or points. In the case of lines the perpendicular distances to detected animals are recorded, while in the case of points the radial distances from the point to detected animals are recorded. A key underlying concept is that the probability of detecting an animal decreases as its distance from the observer increases. Much of distance sampling methodology is concentrated on detection functions, which model the probability of detecting an animal, given its distance from the transect.\nThe below animation illustrates a simple line transect survey. As the observer moves along the transects (red line, showing progress along the current transect), objects are detected with a probability dependent on their distance from the observer (blue points are detected). Distances to the objects are recorded in the histogram. The histogram shows a characteristic decrease in frequency as distance increases — it is this relationship that is modelled by the detection function.\n\n\n\nAn animation showing an example of a distance sampling line transect survey, as the observer moves along lines, objects are detected and their observed distances are reflected in an updated histogram\n\n\nCode to generate the above figure may be found here.",
     "crumbs": [
       "What is distance sampling?"
+    ]
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "First attempt at Distancesampling news",
+    "section": "",
+    "text": "second post\n\n\n\nQuarto\n\n\nsoftware\n\n\nmrds\n\n\n\nblog post description about mrds hope you enjoy it\n\n\n\nRexstad\n\n\nApr 18, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfirst post\n\n\n\nQuarto\n\n\nsoftware\n\n\nDistance\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\nRexstad\n\n\nApr 17, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nNew CRAN release of mrds and Distance packages\n\n\n\nsoftware\n\n\nDistance\n\n\nmrds\n\n\n\nRelease of mrds 2.3.0 and Distance 1.0.9 on CRAN. An important update is that the default encounter rate variance estimator for point transect surveys has now been…\n\n\n\nLaura Marshall\n\n\nJan 4, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nNew versions of Distance and mrds packages\n\n\n\nsoftware\n\n\nDistance\n\n\nmrds\n\n\n\nWe are pleased to announce the release of new versions of our R packages Distance and mrds. The new release adds the ability to fit detection functions (CDS and MCDS)…\n\n\n\nLen Thomas\n\n\nAug 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nDesign and Simulation R packages\n\n\n\nsoftware\n\n\ndssd\n\n\ndsims\n\n\n\nWe would like to make you aware that our design and simulation packages (dssd and dsims) are temporarily only available from our development repository on github.\n\n\n\nLen Thomas\n\n\nJan 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nNew versions of R packages\n\n\n\nsoftware\n\n\nDistance\n\n\nmrds\n\n\n\nImminent release of new versions of our R packages Distance and mrds. The information below will be particularly relevant to users of dht2. We recommend all users of…\n\n\n\nLaura Marshall\n\n\nNov 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nRelease of Distance 7.5\n\n\n\nsoftware\n\n\nDistance for Windows\n\n\n\nRelease of a new version of Distance for Windows, Distance 7.5. This version upgrades to use 64 bit R and also contains new versions of our R packages which are also now on…\n\n\n\nLaura Marshall\n\n\nSep 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nDistance for Windows and R 4.2\n\n\n\nsoftware\n\n\nDistance for Windows\n\n\n\nUsers of Distance for Windows who make use of the analysis engines that call R - that is the MRDS, DSM and MA analysis engines. Distance for Windows currently is not…\n\n\n\nLen Thomas\n\n\nJun 6, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2024-04-17-first-post/index.html",
+    "href": "posts/2024-04-17-first-post/index.html",
+    "title": "first post",
+    "section": "",
+    "text": "noting is here actually"
+  },
+  {
+    "objectID": "posts/2024-04-17-first-post/index.html#pretty-boring",
+    "href": "posts/2024-04-17-first-post/index.html#pretty-boring",
+    "title": "first post",
+    "section": "",
+    "text": "noting is here actually"
+  },
+  {
+    "objectID": "posts/2024-04-18-second-post/index.html",
+    "href": "posts/2024-04-18-second-post/index.html",
+    "title": "second post",
+    "section": "",
+    "text": "because I want to mention mrds\n\nplot(etp.hr.month, main=\"ETP dolphin survey\", showpoints=FALSE)\nadd_df_covar_line(etp.hr.month, data = data.frame(Month=6), col='red', lwd=2, lty=1)\nadd_df_covar_line(etp.hr.month, data = data.frame(Month=7), col='blue', lwd=2, lty=1)\nadd_df_covar_line(etp.hr.month, data = data.frame(Month=8), col='green', lwd=2, lty=1)\nlegend(\"topright\", legend=c(\"June\", \"July\", \"August\"),\n       col=c(\"red\", \"blue\", \"green\"), lwd=2, title = \"Month\")"
+  },
+  {
+    "objectID": "posts/2024-04-18-second-post/index.html#less-boring",
+    "href": "posts/2024-04-18-second-post/index.html#less-boring",
+    "title": "second post",
+    "section": "",
+    "text": "because I want to mention mrds\n\nplot(etp.hr.month, main=\"ETP dolphin survey\", showpoints=FALSE)\nadd_df_covar_line(etp.hr.month, data = data.frame(Month=6), col='red', lwd=2, lty=1)\nadd_df_covar_line(etp.hr.month, data = data.frame(Month=7), col='blue', lwd=2, lty=1)\nadd_df_covar_line(etp.hr.month, data = data.frame(Month=8), col='green', lwd=2, lty=1)\nlegend(\"topright\", legend=c(\"June\", \"July\", \"August\"),\n       col=c(\"red\", \"blue\", \"green\"), lwd=2, title = \"Month\")"
+  },
+  {
+    "objectID": "index.html#recent-news",
+    "href": "index.html#recent-news",
+    "title": "Distance sampling org 2024",
+    "section": "Recent news",
+    "text": "Recent news\n\n\n\n\n\n\n\n\n\n\nsecond post\n\n\n\n\n\nblog post description about mrds hope you enjoy it\n\n\n\n\n\n18 Apr 2024\n\n\nRexstad\n\n\n\n\n\n\n\n\n\n\n\n\nfirst post\n\n\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\n\n\n17 Apr 2024\n\n\nRexstad\n\n\n\n\n\n\n\n\n\n\n\n\nNew CRAN release of mrds and Distance packages\n\n\n\n\n\nRelease of mrds 2.3.0 and Distance 1.0.9 on CRAN. An important update is that the default encounter rate variance estimator for point transect surveys has now been changed from the ‘P3’ estimator to the ‘P2’ estimator.\n\n\n\n\n\n04 Jan 2024\n\n\nLaura Marshall\n\n\n\n\n\n\n\n\n\n\n\n\nNew versions of Distance and mrds packages\n\n\n\n\n\nWe are pleased to announce the release of new versions of our R packages Distance and mrds. The new release adds the ability to fit detection functions (CDS and MCDS) using the same optimizer used by Distance for Windows.\n\n\n\n\n\n03 Aug 2023\n\n\nLen Thomas\n\n\n\n\n\n\n\n\n\n\n\n\nDesign and Simulation R packages\n\n\n\n\n\nWe would like to make you aware that our design and simulation packages (dssd and dsims) are temporarily only available from our development repository on github.\n\n\n\n\n\n12 Jan 2023\n\n\nLen Thomas\n\n\n\n\n\n\n\n\n\n\n\n\nNew versions of R packages\n\n\n\n\n\nImminent release of new versions of our R packages Distance and mrds. The information below will be particularly relevant to users of dht2. We recommend all users of these packages update to the newest versions.\n\n\n\n\n\n16 Nov 2022\n\n\nLaura Marshall\n\n\n\n\n\n\n\n\n\n\n\n\nRelease of Distance 7.5\n\n\n\n\n\nRelease of a new version of Distance for Windows, Distance 7.5. This version upgrades to use 64 bit R and also contains new versions of our R packages which are also now on CRAN.\n\n\n\n\n\n07 Sep 2022\n\n\nLaura Marshall\n\n\n\n\n\n\n\n\n\n\n\n\nDistance for Windows and R 4.2\n\n\n\n\n\nUsers of Distance for Windows who make use of the analysis engines that call R - that is the MRDS, DSM and MA analysis engines. Distance for Windows currently is not compatible with the latest version of R (4.2); we suggest a workaround and announce that we will be releasing a new version of Distance for Windows in August 2022.\n\n\n\n\n\n06 Jun 2022\n\n\nLen Thomas\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/oldsite/2024-01-04-rpackages.html",
+    "href": "posts/oldsite/2024-01-04-rpackages.html",
+    "title": "New CRAN release of mrds and Distance packages",
+    "section": "",
+    "text": "This change will only make a difference to the variance estimate when there is variable survey effort (e.g. variable numbers of visits) between points, which is uncommon in practice. In the case that points are visited the same number of times these two estimators (‘P2’ and ‘P3’) are equivalent and there will be no difference in the variance estimates.\nThis change to the default encounter rate estimator was made for consistency with the line transect estimator, where the equivalent ‘R2’ estimator is the default, and also with Distance for Windows where ‘R2’ and ‘P2’ are the defaults for line and point transect surveys, respectively. ‘R2’ and ‘P2’ are both design-based variance estimators, while ‘R3’ and ‘P3’ are model-derived; the design-based line transect estimator was found to be superior when model assumptions fail (see Fewster et. al. 2009, for details).\nThese releases also address a number of reported issues within the packages. A full list of changes and updates is given below.\nThanks to those who have made feature requests or reported issues. If you do find any problems, or want to suggest a new feature, please feel free to raise an issue at https://github.com/DistanceDevelopment/distance-bugs/issues or in the github page for each package"
+  },
+  {
+    "objectID": "posts/oldsite/2024-01-04-rpackages.html#full-list-of-changes-and-updates",
+    "href": "posts/oldsite/2024-01-04-rpackages.html#full-list-of-changes-and-updates",
+    "title": "New CRAN release of mrds and Distance packages",
+    "section": "Full list of changes and updates:",
+    "text": "Full list of changes and updates:\n\nmrds\nChanges in version 2.3.0 (submitted to on CRAN 18/12/2023)\n\nThe ‘P2’ estimator is now the default for estimating the encouter rate variance for point transect surveys. (Issue #65) https://github.com/DistanceDevelopment/mrds/issues/65\nRe-formatted the format section of the documentation for the book.tee.data (Issue #91) https://github.com/DistanceDevelopment/mrds/issues/91\nEnsure that the MCDS optimizer is not used for double observer models as this was generating errors. (Issue #89) https://github.com/DistanceDevelopment/mrds/issues/89\nImproved the documentation on initial values, lower and upper bounds in both the ddf and mrds_opt documentation (mrds_opt was renamed from mrds-opt which was not accessible via ?mrds-opt). (Issue #90) https://github.com/DistanceDevelopment/mrds/issues/90\n\n\n\nDistance\nChanges in version 1.0.9 (accepted to CRAN 21/12/2023)\n\nChanged the default encounter rate estimator for point transect surveys from P3 to P2. (Issue #138) https://github.com/DistanceDevelopment/Distance/issues/138\nFixed bug which produced NA’s when stratum names came after ‘Total’ in the alphabet. (Issue #158) https://github.com/DistanceDevelopment/Distance/issues/158\nAdded additional documentation explaining the adjustment term options when covariates are in the model. (Issue #156) https://github.com/DistanceDevelopment/Distance/issues/156\nFixed dht bootstrap to work when distbegin and distend are supplied but not distance. (Issue #147) https://github.com/DistanceDevelopment/Distance/issues/147\nAdded a warning for the dht bootstrap when Sample.Label values are not unique across all strata. (Issue #157) https://github.com/DistanceDevelopment/Distance/issues/157\nDistance 1.0.9 depends on mrds &gt;= 2.3.0 due to re-named documentation page links."
+  },
+  {
+    "objectID": "posts/oldsite/2023-08-03-distance-r-package-updates.html",
+    "href": "posts/oldsite/2023-08-03-distance-r-package-updates.html",
+    "title": "New versions of Distance and mrds packages",
+    "section": "",
+    "text": "We are pleased to announce the release of new versions of our R packages Distance and mrds. The new release adds the ability to fit detection functions (CDS and MCDS) using the same optimizer used by Distance for Windows.\nThis requires downloading a compiled file MCDS.exe into an R library directory, and is currently only supported under Windows operating systems. This new feature may be of use for those encountering difficulties fitting detection functions (e.g., convergence problems) and also those with inherently “difficult” distance sampling data - e.g., data with a spike in the detection function close to zero or overdispersion (many non-independent detections, such as is common in camera trap distance sampling). There are also circumstances with the MCDS.exe optimizer is faster than the R-based one, which may be of particular help when using a nonparametric bootstrap for variance estimation. A vignette giving examples and more information is available on our DistanceExamples web page (the vignette is entitled “Alternative optimization engine for fitting detection functions” and a direct link to the html file is here ). If you encounter any difficulties in using this new enhancement, please let us know.\nPlease note that this new feature is not currently available under non-Windows operating systems (e.g., Mac or Linux) and we also do not recommend using it if you analyze double-platform data using the mrds package.\nA full list of changes and updates is given below.\nThanks to those who have made feature requests or reported issues. If you do find any problems, or want to suggest a new feature, please feel free to raise an issue at https://github.com/DistanceDevelopment/distance-bugs/issues or in the github page for each package\nhttps://github.com/DistanceDevelopment/Distance/issues\nhttps://github.com/DistanceDevelopment/mrds/issues"
+  },
+  {
+    "objectID": "posts/oldsite/2023-08-03-distance-r-package-updates.html#full-list-of-changes-and-updates",
+    "href": "posts/oldsite/2023-08-03-distance-r-package-updates.html#full-list-of-changes-and-updates",
+    "title": "New versions of Distance and mrds packages",
+    "section": "Full list of changes and updates:",
+    "text": "Full list of changes and updates:\n\nDistance\nChanges in version 1.0.8\n\nSupport for using MCDS.exe from Distance for Windows to run analyses. You can now download MCDS.exe using mrds::download_MCDS_dot_exe run analyses using this engine, rather (or in tandem with) the usual R optimizers provided in mrds. ds will pick the best (by likelihood) and return that. See ?ds and ?“mcds-dot-exe” for more details.\n\n\n\nmrds\nChanges in version 2.2.9\nNew Features\n\nUsers can now download the fortran MCDS.exe optimiser used in Distance for Windows and fit single observer models with both the optimisers in R via mrds and also MCDS.exe. For some datasets the optimisation with MCDS.exe is superior (giving a better likelihood) than the optimiser in R used with mrds. See ?MCDS for more details.\n\nBug Fixes\n\nfix bug where the (true, 2nd derivative) hessian was not calculated during optimisation. This then lead to weird errors later (summary doesn’t work etc). Hessians are now calculated in this case. Thanks to Anne Provencher St-Pierre for reporting the issue\nFix prediction bug (Issue #84) where predicting for hazard rate model with covariates and se.fit= TRUE. Note there may be issues when predicting in this instance for binned data - check results are as expected.\nFix bug when a uniform model was fitted with no adjustments. This caused an error when looking for the hessian. It also required that the covariance set to 0 when estimating the cluster size standard errors (Issue #79).\nfix bug with using binned data via cutpoints for prediction (#73)"
+  },
+  {
+    "objectID": "posts/oldsite/2022-11-16-distance-r-package-updates.html",
+    "href": "posts/oldsite/2022-11-16-distance-r-package-updates.html",
+    "title": "New versions of R packages",
+    "section": "",
+    "text": "We are pleased to announce the imminent release of new versions of our R packages Distance and mrds. The information below will be particularly relevant to users of dht2. We recommend all users of these packages update to the newest versions.\nA full list of changes and updates is given below.\nOne important change is that the dht2 function in Distance now requires that the data contains an object column. If your data is missing this column it can easily be added as follows:\nThis minor changes also affects some of our code example vignettes, available at https://examples.distancesampling.org/ We believe all the affected examples have now been updated.\nThanks to those who have made feature requests or reported issues. If you do find any problems, or want to suggest a new feature, please feel free to raise an issue at https://github.com/DistanceDevelopment/distance-bugs/issues or in the github page for each package\nhttps://github.com/DistanceDevelopment/Distance/issues\nhttps://github.com/DistanceDevelopment/mrds/issues"
+  },
+  {
+    "objectID": "posts/oldsite/2022-11-16-distance-r-package-updates.html#full-list-of-changes-and-updates",
+    "href": "posts/oldsite/2022-11-16-distance-r-package-updates.html#full-list-of-changes-and-updates",
+    "title": "New versions of R packages",
+    "section": "Full list of changes and updates:",
+    "text": "Full list of changes and updates:\n\nDistance\nChanges in version 1.0.7 (accepted to CRAN 16/11/2022)\n\ndht2 now requires the object field in flatfile formatted data. The following vignette shows how to add an object field if your data does not have already have one: https://examples.distancesampling.org/Distance-cameratraps/camera-distill.html (#139) https://github.com/DistanceDevelopment/Distance/issues/139\nFix bugs when a uniform is fitted with no adjustments (#129 / #130) https://github.com/DistanceDevelopment/Distance/issues/129 https://github.com/DistanceDevelopment/Distance/issues/130\nFixed error in dht2 when binned data used distend / distbegin (#142) https://github.com/DistanceDevelopment/Distance/issues/142\n\n\n\nmrds\nChanges in version 2.2.8 (submitted to on CRAN 16/11/2022)\n\nFix bug where plotting rem.fi models when truncation was used would lead to an error being thrown. (#58) https://github.com/DistanceDevelopment/mrds/issues/58\nFix bugs when a uniform is fitted with no adjustments (#59) https://github.com/DistanceDevelopment/mrds/issues/59\nFix bug in plotting when left truncation was used and points didn’t match detection function line (Distance #134) https://github.com/DistanceDevelopment/Distance/issues/134\nFix bug in debug reporting when uniform only models are used (Distance #136) https://github.com/DistanceDevelopment/Distance/issues/136\nFix bug in adjustment term fitting where width scaling was defined as right minus left truncation, rather than just the right truncation value (Distance #133) https://github.com/DistanceDevelopment/Distance/issues/133\nUse (0,width) as the interval for monotonicity checks, rather than (left, width) as this was causing issues and is not consistent with Distance for Windows (Distance #135) https://github.com/DistanceDevelopment/Distance/issues/135\nExpose mono.outer.iter option to control number of outer iterations used to fit a monotonic model. Default 200.\nMake dht output tables consistent. Now always refers to Region in the display (rather than Region in summary and Label in N/D tables). Note this is only a display change so won’t break code which looks to extract these values based on column names from the dht object which is unchanged.(#5) https://github.com/DistanceDevelopment/mrds/issues/5\nFixed bug leading to erroneous zero totals in individuals N/D tables when there were no sightings in one or more strata. Bug was apparent when the data were sightings of clusters and the varflag 1 option (er_method = 1 in Distance ds function) was selected in the dht function.(#61) https://github.com/DistanceDevelopment/mrds/issues/61"
+  },
+  {
+    "objectID": "posts/oldsite/2022-06-06-distance-75-plans.html",
+    "href": "posts/oldsite/2022-06-06-distance-75-plans.html",
+    "title": "Distance for Windows and R 4.2",
+    "section": "",
+    "text": "This message is relevant for users of Distance for Windows who make use of the analysis engines that call R - that is the MRDS, DSM and MA analysis engines. Distance for Windows currently is not compatible with the latest version of R (4.2); we suggest a workaround and announce that we will be releasing a new version of Distance for Windows in August.\n\nIn the most recent release of R, that is version 4.2, the R for Windows build has stopped supporting 32-bit R. This is the version called by Distance for Windows. Hence, at present Distance for Windows is not compatible with the latest version of R. We therefore suggest users do not upgrade beyond R 4.1.2, which is the version supported by our current release of Distance for Windows (version 7.4 Release 2). If users do wish to upgrade their version of R, they should retain version 4.1.2 on their computer so that Distance for Windows can still call it to run the analysis engines.\nWe are planning a new release of Distance for Windows towards the end of August (version 7.5 Release 1) that will fix this issue."
+  },
+  {
+    "objectID": "posts/oldsite/2022-09-07-distance75-release.html",
+    "href": "posts/oldsite/2022-09-07-distance75-release.html",
+    "title": "Release of Distance 7.5",
+    "section": "",
+    "text": "We are pleased to announce the release of a new version of Distance for Windows, Distance 7.5. This version upgrades to use 64 bit R and also contains new versions of our R packages which are also now on CRAN.\nThese enhancements include:\nNow that the simulation engine has been switched to use the dsims package (the DSsim package has now been retired), please report any issues you encounter with this transition. Also note that the ability to run global simulations with stratified designs is not currently available, we will make this option available again in a second release of Distance 7.5 in the next few months.\nR packages:"
+  },
+  {
+    "objectID": "posts/oldsite/2022-09-07-distance75-release.html#download-distance-7.5",
+    "href": "posts/oldsite/2022-09-07-distance75-release.html#download-distance-7.5",
+    "title": "Release of Distance 7.5",
+    "section": "Download Distance 7.5",
+    "text": "Download Distance 7.5\nFollow this link for more information on downloading Distance 7.5"
+  },
+  {
+    "objectID": "posts/oldsite/2023-01-12-dssd-dsims-packages.html",
+    "href": "posts/oldsite/2023-01-12-dssd-dsims-packages.html",
+    "title": "Design and Simulation R packages",
+    "section": "",
+    "text": "We would like to make you aware that our design and simulation packages (dssd and dsims) are temporarily only available from our development repository on github. Please follow link for instructions on installing them.\n\nWe are currently working to get dssd and dsims back on CRAN (Comprehensive R Archive Network) as soon as possible. In the meantime, please use the following code to install these packages from our development repository on github.\ninstall.packages(\"devtools\")\nlibrary(devtools)\ninstall_github(\"DistanceDevelopment/dssd\", build_vignettes = TRUE)\ninstall_github(\"DistanceDevelopment/dsims\", build_vignettes = TRUE)\nFor those interested in the nitty gritty, here are more details.\nPlease be reassured that both dssd and dsims continued to pass all CRAN checks on both current R, old R and development R for all standard setups for windows, mac, M1 mac and the various linux platforms.\nCRAN also runs checks on more unusual setups and has detected that dssd may generate some shape related errors if you are using alternative BLAS/LAPACK implementations for more efficient linear algebra calculations. The machine they tested was using R-devel in an x86_64 Fedora 34 Linux environment. Please email us if you have come across this issue as we are currently trying to replicate the error."
+  },
+  {
+    "objectID": "posts/oldsite/2024-01-04-distance-r-package-updates.html",
+    "href": "posts/oldsite/2024-01-04-distance-r-package-updates.html",
+    "title": "New CRAN release of mrds and Distance packages",
+    "section": "",
+    "text": "We announce the release of mrds 2.3.0 and Distance 1.0.9 on CRAN. An important update is that the default encounter rate variance estimator for point transect surveys has now been changed from the ‘P3’ estimator to the ‘P2’ estimator. Please follow link for further details.\nThis change will only make a difference to the variance estimate when there is variable survey effort (e.g. variable numbers of visits) between points, which is rare in practice. In the case that points are visited the same number of times these two estimators (‘P2’ and ‘P3’) are equivalent and there will be no difference in the variance estimates.\nThis change to the default encounter rate estimator was made for consistency with the line transect estimator, where the equivalent ‘R2’ estimator is the default, and also with Distance for Windows where ‘R2’ and ‘P2’ are the defaults for line and point transect surveys, respectively. ‘R2’ and ‘P2’ are both design-based variance estimators, while ‘R3’ and ‘P3’ are model-derived; the design-based line transect estimator was found to be superior when model assumptions fail (see Fewster et. al. 2009, for details).\nThese releases also address a number of reported issues within the packages. A full list of changes and updates is given below.\nThanks to those who have made feature requests or reported issues. If you do find any problems, or want to suggest a new feature, please feel free to raise an issue at https://github.com/DistanceDevelopment/distance-bugs/issues or in the github page for each package\nhttps://github.com/DistanceDevelopment/Distance/issues\nhttps://github.com/DistanceDevelopment/mrds/issues"
+  },
+  {
+    "objectID": "posts/oldsite/2024-01-04-distance-r-package-updates.html#full-list-of-changes-and-updates",
+    "href": "posts/oldsite/2024-01-04-distance-r-package-updates.html#full-list-of-changes-and-updates",
+    "title": "New CRAN release of mrds and Distance packages",
+    "section": "Full list of changes and updates:",
+    "text": "Full list of changes and updates:\n\nmrds\nChanges in version 2.3.0 (submitted to on CRAN 18/12/2023)\n\nThe ‘P2’ estimator is now the default for estimating the encouter rate variance for point transect surveys. (Issue #65) https://github.com/DistanceDevelopment/mrds/issues/65\nRe-formatted the format section of the documentation for the book.tee.data (Issue #91) https://github.com/DistanceDevelopment/mrds/issues/91\nEnsure that the MCDS optimizer is not used for double observer models as this was generating errors. (Issue #89) https://github.com/DistanceDevelopment/mrds/issues/89\nImproved the documentation on initial values, lower and upper bounds in both the ddf and mrds_opt documentation (mrds_opt was renamed from mrds-opt which was not accessible via ?mrds-opt). (Issue #90) https://github.com/DistanceDevelopment/mrds/issues/90\n\n\n\nDistance\nChanges in version 1.0.9 (accepted to CRAN 21/12/2023)\n\nChanged the default encounter rate estimator for point transect surveys from P3 to P2. (Issue #138) https://github.com/DistanceDevelopment/Distance/issues/138\nFixed bug which produced NA’s when stratum names came after ‘Total’ in the alphabet. (Issue #158) https://github.com/DistanceDevelopment/Distance/issues/158\nAdded additional documentation explaining the adjustment term options when covariates are in the model. (Issue #156) https://github.com/DistanceDevelopment/Distance/issues/156\nFixed dht bootstrap to work when distbegin and distend are supplied but not distance. (Issue #147) https://github.com/DistanceDevelopment/Distance/issues/147\nAdded a warning for the dht bootstrap when Sample.Label values are not unique across all strata. (Issue #157) https://github.com/DistanceDevelopment/Distance/issues/157\nDistance 1.0.9 depends on mrds &gt;= 2.3.0 due to re-named documentation page links."
+  },
+  {
+    "objectID": "posts/oldsite/2023-01-12-dssd-dsims.html",
+    "href": "posts/oldsite/2023-01-12-dssd-dsims.html",
+    "title": "Design and Simulation R packages",
+    "section": "",
+    "text": "We are currently working to get dssd and dsims back on CRAN (Comprehensive R Archive Network) as soon as possible. In the meantime, please use the following code to install these packages from our development repository on github.\n\ninstall.packages(\"devtools\")\nlibrary(devtools)\ninstall_github(\"DistanceDevelopment/dssd\", build_vignettes = TRUE)\ninstall_github(\"DistanceDevelopment/dsims\", build_vignettes = TRUE)\n\nFor those interested in the nitty gritty, here are more details.\nPlease be reassured that both dssd and dsims continued to pass all CRAN checks on both current R, old R and development R for all standard setups for windows, mac, M1 mac and the various linux platforms.\nCRAN also runs checks on more unusual setups and has detected that dssd may generate some shape related errors if you are using alternative BLAS/LAPACK implementations for more efficient linear algebra calculations. The machine they tested was using R-devel in an x86_64 Fedora 34 Linux environment. Please email us if you have come across this issue as we are currently trying to replicate the error."
+  },
+  {
+    "objectID": "posts/oldsite/2023-08-03-rupdates23.html",
+    "href": "posts/oldsite/2023-08-03-rupdates23.html",
+    "title": "New versions of Distance and mrds packages",
+    "section": "",
+    "text": "This requires downloading a compiled file MCDS.exe into an R library directory, and is currently only supported under Windows operating systems. This new feature may be of use for those encountering difficulties fitting detection functions (e.g., convergence problems) and also those with inherently “difficult” distance sampling data - e.g., data with a spike in the detection function close to zero or overdispersion (many non-independent detections, such as is common in camera trap distance sampling). There are also circumstances with the MCDS.exe optimizer is faster than the R-based one, which may be of particular help when using a nonparametric bootstrap for variance estimation. A vignette giving examples and more information is available on our DistanceExamples web page (the vignette is entitled “Alternative optimization engine for fitting detection functions” and a direct link to the html file is here ). If you encounter any difficulties in using this new enhancement, please let us know.\nPlease note that this new feature is not currently available under non-Windows operating systems (e.g., Mac or Linux) and we also do not recommend using it if you analyze double-platform data using the mrds package."
+  },
+  {
+    "objectID": "posts/oldsite/2023-08-03-rupdates23.html#a-full-list-of-changes-and-updates-is-given-below.",
+    "href": "posts/oldsite/2023-08-03-rupdates23.html#a-full-list-of-changes-and-updates-is-given-below.",
+    "title": "New versions of Distance and mrds packages",
+    "section": "A full list of changes and updates is given below.",
+    "text": "A full list of changes and updates is given below.\nThanks to those who have made feature requests or reported issues. If you do find any problems, or want to suggest a new feature, please feel free to raise an issue at https://github.com/DistanceDevelopment/distance-bugs/issues or in the github page for each package\n\nhttps://github.com/DistanceDevelopment/Distance/issues\nhttps://github.com/DistanceDevelopment/mrds/issues"
+  },
+  {
+    "objectID": "posts/oldsite/2023-08-03-rupdates23.html#full-list-of-changes-and-updates",
+    "href": "posts/oldsite/2023-08-03-rupdates23.html#full-list-of-changes-and-updates",
+    "title": "New versions of Distance and mrds packages",
+    "section": "Full list of changes and updates:",
+    "text": "Full list of changes and updates:\n\nDistance\nChanges in version 1.0.8\n\nSupport for using MCDS.exe from Distance for Windows to run analyses. You can now download MCDS.exe using mrds::download_MCDS_dot_exe run analyses using this engine, rather (or in tandem with) the usual R optimizers provided in mrds. ds will pick the best (by likelihood) and return that. See ?ds and ?“mcds-dot-exe” for more details.\n\n\n\nmrds\nChanges in version 2.2.9\n\nNew Features\n\nUsers can now download the fortran MCDS.exe optimiser used in Distance for Windows and fit single observer models with both the optimisers in R via mrds and also MCDS.exe. For some datasets the optimisation with MCDS.exe is superior (giving a better likelihood) than the optimiser in R used with mrds. See ?MCDS for more details.\n\n\n\nBug Fixes\n\nfix bug where the (true, 2nd derivative) hessian was not calculated during optimisation. This then lead to weird errors later (summary doesn’t work etc). Hessians are now calculated in this case. Thanks to Anne Provencher St-Pierre for reporting the issue\nFix prediction bug (Issue #84) where predicting for hazard rate model with covariates and se.fit= TRUE. Note there may be issues when predicting in this instance for binned data - check results are as expected.\nFix bug when a uniform model was fitted with no adjustments. This caused an error when looking for the hessian. It also required that the covariance set to 0 when estimating the cluster size standard errors (Issue #79).\nfix bug with using binned data via cutpoints for prediction (#73)"
+  },
+  {
+    "objectID": "posts/oldsite/2022-09-07-distwin-release.html",
+    "href": "posts/oldsite/2022-09-07-distwin-release.html",
+    "title": "Release of Distance 7.5",
+    "section": "",
+    "text": "Enhancements include:\nNow that the simulation engine has been switched to use the dsims package (the DSsim package has now been retired), please report any issues you encounter with this transition. Also note that the ability to run global simulations with stratified designs is not currently available, we will make this option available again in a second release of Distance 7.5 in the next few months.\nR packages:"
+  },
+  {
+    "objectID": "posts/oldsite/2022-09-07-distwin-release.html#download-distance-7.5",
+    "href": "posts/oldsite/2022-09-07-distwin-release.html#download-distance-7.5",
+    "title": "Release of Distance 7.5",
+    "section": "Download Distance 7.5",
+    "text": "Download Distance 7.5\nFollow this link for more information on downloading Distance 7.5"
+  },
+  {
+    "objectID": "software/Rpackages.html#distance-sampling-detection-function-and-abundance-estimation",
+    "href": "software/Rpackages.html#distance-sampling-detection-function-and-abundance-estimation",
+    "title": "R packages",
+    "section": "",
+    "text": "A simple way of fitting detection functions to distance sampling data for both line and point transects. Adjustment term selection, left and right truncation as well as monotonicity constraints and binning are supported. Abundance and density estimates can also be calculated (via a Horvitz-Thompson-like estimator) if survey area information is provided. See Miller et al. (2019) for more information on methods and https://examples.distancesampling.org/ for example analyses.\n\n\nDistance CRAN site\n\nGithub repository for Distance",
+    "crumbs": [
+      "R packages"
+    ]
+  },
+  {
+    "objectID": "software/Rpackages.html#mark-recapture-distance-sampling",
+    "href": "software/Rpackages.html#mark-recapture-distance-sampling",
+    "title": "R packages",
+    "section": "Mark-Recapture Distance Sampling",
+    "text": "Mark-Recapture Distance Sampling\n\nAnimal abundance estimation via conventional, multiple covariate and mark-recapture distance sampling (CDS/MCDS/MRDS). Detection function fitting is performed via maximum likelihood. Also included are diagnostics and plotting for fitted detection functions. Abundance estimation is via a Horvitz-Thompson-like estimator. Originally described in Laake & Borchers (2004)\n\n\nmrds CRAN site\n\nGithub repository for mrds",
+    "crumbs": [
+      "R packages"
+    ]
+  },
+  {
+    "objectID": "software/Rpackages.html#distance-sampling-survey-design",
+    "href": "software/Rpackages.html#distance-sampling-survey-design",
+    "title": "R packages",
+    "section": "Distance Sampling Survey Design",
+    "text": "Distance Sampling Survey Design\n\nCreates survey designs for distance sampling surveys. These designs can be assessed for various effort and coverage statistics. Once the user is satisfied with the design characteristics they can generate a set of transects to use in their distance sampling survey. Many of the designs implemented in this R package were first made available in our ‘Distance’ for Windows software and are detailed in Chapter 7 of Advanced Distance Sampling, Buckland et al. (2004). Package cited as Marshall (2023b).\n\n\ndssd CRAN site\n\nGithub repository for dssd",
+    "crumbs": [
+      "R packages"
+    ]
+  },
+  {
+    "objectID": "software/Rpackages.html#distance-sampling-simulations",
+    "href": "software/Rpackages.html#distance-sampling-simulations",
+    "title": "R packages",
+    "section": "Distance Sampling Simulations",
+    "text": "Distance Sampling Simulations\n\nPerforms distance sampling simulations. ‘dsims’ repeatedly generates instances of a user defined population within a given survey region. It then generates realisations of a survey design and simulates the detection process. The data are then analysed so that the results can be compared for accuracy and precision across all replications. This process allows users to optimise survey designs for their specific set of survey conditions. The effects of uncertainty in population distribution or parameters can be investigated under a number of simulations so that users can be confident that they have achieved a robust survey design before deploying vessels into the field. The distance sampling designs used in this package from ‘dssd’ are detailed in Buckland et al. (2004). General distance sampling methods are detailed in Buckland et al. (2001). Package cited as Marshall (2023a).\n\n\ndsims CRAN site\n\nGithub repository for dsims",
+    "crumbs": [
+      "R packages"
     ]
   }
 ]
