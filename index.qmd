@@ -12,9 +12,11 @@ listing:
   date-format: "DD MMM YYYY"
 ---
 
-![Photo by Matthew Fainman on Unsplash](10pct.jpg){width="100%"}
+![Photo by Matthew Fainman on Unsplash](matthew-fainman-MLxEmi1Fk8A-unsplash.jpg){width="100%"}
 
 ## Recent news
+
+Welcome to the home of software and insights regarding distance sampling hosted by the Centre for Research into Ecological and Environmental Modelling at the University of St Andrews.
 
 ::: {#sample-listings}
 :::
